@@ -24,7 +24,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <ComboBox fx:id="addTeamMemberComboBox" layoutX="14.0" layoutY="185.0" prefHeight="31.0" prefWidth="185.0" promptText="Add Team Member" />
       <TextField fx:id="assignTaskTextField" layoutX="230.0" layoutY="131.0" promptText="Assign Task">
          <font>
             <Font name="System Bold" size="15.0" />

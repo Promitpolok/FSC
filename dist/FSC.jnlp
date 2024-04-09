@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="UserLogin.jnlp">
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="FSC.jnlp">
   <information>
-    <title>UserLogin</title>
+    <title>FSC</title>
     <vendor>Promit</vendor>
     <description>null</description>
     <offline-allowed/>
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="UserLogin.jar" size="45505" download="eager" />
+    <jar href="FSC.jar" size="70079" download="eager" />
   </resources>
-  <jfx:javafx-desc  width="800" height="600" main-class="Login.MainApplicationClass"  name="UserLogin" />
+  <jfx:javafx-desc  width="800" height="600" main-class="Login.MainApplicationClass"  name="FSC" />
   <update check="always"/>
 </jnlp>

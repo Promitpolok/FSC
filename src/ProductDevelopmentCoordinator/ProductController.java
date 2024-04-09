@@ -85,7 +85,19 @@ myStage.show();
     }
 
     @FXML
-    private void AddNewProductButtonOnMouseClick(ActionEvent event) {
+    private void AddNewProductButtonOnMouseClick(ActionEvent event) throws IOException {
+        
+        Parent root = null;
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Add New Product.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+AddNewProductController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show(); 
     }
 
     @FXML

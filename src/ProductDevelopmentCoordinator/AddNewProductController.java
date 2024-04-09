@@ -51,9 +51,6 @@ myStage.setScene(myScene);
 myStage.show(); 
     }
 
-    @FXML
-    private void messageSupplyChainCoodinatorforNewProductOnMouseClick(ActionEvent event) {
-    }
 
     @FXML
     private void addProducttoBuyersCartOnMouseClick(ActionEvent event) {

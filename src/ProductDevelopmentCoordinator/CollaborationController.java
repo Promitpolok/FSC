@@ -33,7 +33,6 @@ public class CollaborationController implements Initializable {
     private TextField projectTitleTextField;
     @FXML
     private TextField projectDescriptionTextField;
-    @FXML
     private ComboBox<String> addTeamMemberComboBox;
     @FXML
     private TextField assignTaskTextField;
@@ -48,27 +47,16 @@ public class CollaborationController implements Initializable {
         
         UserList= new ArrayList<>();
         
-        addTeamMemberComboBox.getItems().addAll(
+        selectTeamMemberComboBox.getItems().addAll(
                 "Supply Chain Coordinator", 
                 "Product Development Coordinator", 
                 "Accountant",
                 "Digital Marketing Executive",
                 "CEO",
-                "Warehouse Associate", 
-                "Buyer", 
+                "Warehouse Associate",  
                 "Customer Support Specialist"
         
         
-        );
-        
-        selectTeamMemberComboBox.getItems().addAll(
-                "Supply Chain Coordinator",
-                "Product Development Coordinator",
-                "Accountant",
-                "Digital Marketing Executive",
-                "CEO",
-                "Warehouse Associate",
-                "Customer Support Specialist"
         );
         
     }    

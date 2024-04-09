@@ -13,28 +13,13 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="388.0" layoutY="104.0" mnemonicParsing="false" onAction="#CurrentStockButtonOnMouseClick" prefHeight="31.0" prefWidth="121.0" text="Current Stock">
+      <Button layoutX="458.0" layoutY="104.0" mnemonicParsing="false" onAction="#CurrentStockButtonOnMouseClick" prefHeight="31.0" prefWidth="121.0" text="Current Stock">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
       <ComboBox fx:id="productNameComboBox" layoutX="163.0" layoutY="104.0" prefWidth="150.0" promptText="Product Name" />
-      <Button layoutX="163.0" layoutY="173.0" mnemonicParsing="false" onAction="#ReOrderLevelButtonOnMouseClick" prefHeight="31.0" prefWidth="121.0" text="ReOrder Level">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button layoutX="385.0" layoutY="173.0" mnemonicParsing="false" onAction="#ReOrderStockButtonOnMouseClick" prefHeight="31.0" prefWidth="128.0" text="ReOrder Stock">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button layoutX="385.0" layoutY="234.0" mnemonicParsing="false" onAction="#ReportButtonOnMouseClick" prefHeight="31.0" prefWidth="121.0" text="Report">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button layoutX="160.0" layoutY="234.0" mnemonicParsing="false" onAction="#UpdateStockLevelOnMouseClick" prefHeight="31.0" prefWidth="128.0" text="Update Stock">
+      <Button layoutX="163.0" layoutY="168.0" mnemonicParsing="false" onAction="#UpdateStockLevelOnMouseClick" prefHeight="31.0" prefWidth="128.0" text="Update Stock">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -44,7 +29,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </TextArea>
-      <TextArea layoutX="531.0" layoutY="120.0" prefHeight="95.0" prefWidth="252.0" text="Show Product Quantity:">
+      <TextArea layoutX="392.0" layoutY="160.0" prefHeight="95.0" prefWidth="252.0" text="Show Product Quantity:">
          <font>
             <Font name="System Bold" size="15.0" />
          </font></TextArea>

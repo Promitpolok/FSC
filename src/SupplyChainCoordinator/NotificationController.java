@@ -6,6 +6,7 @@ package SupplyChainCoordinator;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -29,13 +30,25 @@ public class NotificationController implements Initializable {
     private TextField enterMessageTextField;
     @FXML
     private ComboBox<String> selectNameComboBox;
+    
+    private ArrayList <UserName> UserList;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
+        UserList= new ArrayList<>();
+        
+        selectNameComboBox.getItems().addAll(
+                "Supply Chain Coordinator", 
+                "Product Development Coordinator", 
+                "Accountant",
+                "Digital Marketing Executive",
+                "CEO",
+                "Warehouse Associate",
+                "Customer Support Specialist");
     }    
 
     @FXML

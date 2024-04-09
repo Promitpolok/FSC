@@ -21,7 +21,7 @@ public class MainApplicationClass extends Application {
    
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/ProductDevelopmentCoordinator/Collaboration.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/SupplyChainCoordinator/Dashboard Supply Chain Coordinator.fxml"));
         
         Scene scene = new Scene(root);
                 
