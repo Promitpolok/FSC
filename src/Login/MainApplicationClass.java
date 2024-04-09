@@ -21,7 +21,10 @@ public class MainApplicationClass extends Application {
    
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/ProductDevelopmentCoordinator/Collaboration.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("/ProductDevelopmentCoordinator/Collaboration.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("/ProductDevelopmentCoordinator/Collaboration.fxml"));
+          //Parent root = FXMLLoader.load(getClass().getResource("/Accountant/Accountant.fxml"));
+          Parent root = FXMLLoader.load(getClass().getResource("/Digital_Marketing_Excutive/CreateAds.fxml"));
         
         Scene scene = new Scene(root);
                 

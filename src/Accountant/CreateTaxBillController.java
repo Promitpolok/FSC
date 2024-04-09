@@ -62,7 +62,8 @@ myStage.show();
     }
 
     @FXML
-    private void addButtonMouseOnClick(ActionEvent event) {
+    private void addButtonMouseOnClick(ActionEvent event) { 
+
     }
 
     @FXML
@@ -71,22 +72,35 @@ myStage.show();
 
     @FXML
     private void incomeTextFieldMouseOnClick(ActionEvent event) { 
-        int a;
-        a= Integer.parseInt(incomeTaxtField.getText());
+        Integer income=incomeTaxtField.getLength();
+      
+        
+
+// switch (){
+           // case incomeTaxtField.setText(value)
+        
+      //  }
+        
+        
+        
+        
+    }}
+        //int a;
+        //a= Integer.parseInt(incomeTaxtField.getText());
        
         
        //b=Integer.parseInt(unitTaxTextField.getText());
        
-       if (a<0){
-           unitTaxTextField.setText("0");
-       }
-       if (a>1) {
-           unitTaxTextField.setText(".5");             
-       }
+       //if (a<0){
+          // unitTaxTextField.setText("0");
+       //}
+       //if (a>1) {
+          // unitTaxTextField.setText(".5");             
+      // }
        //if(a) 
 
-        }
+       // }
 
-    }
+    
     
 
