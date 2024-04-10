@@ -17,6 +17,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
@@ -38,6 +39,8 @@ public class CollaborationController implements Initializable {
     private TextField assignTaskTextField;
     
     private ArrayList <UserName> UserList;
+    @FXML
+    private TextArea infoTextArea;
 
     /**
      * Initializes the controller class.
@@ -59,7 +62,7 @@ public class CollaborationController implements Initializable {
         
         );
         
-    }    
+    }
 
     @FXML
     private void BackButtonOnMouseClick(ActionEvent event) throws IOException {
@@ -75,6 +78,41 @@ ProductDevelopmentCoordinatorDashboardController x = myLoader.getController();
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show(); 
+    }
+    
+    private void showInfo(){
+        String memberName=selectTeamMemberComboBox.getValue();
+        String projectTitle=projectTitleTextField.getText();
+        String projectDescription=projectDescriptionTextField.getText();
+        String assignedTask=assignTaskTextField.getText();
+        
+        if (memberName!=null && !projectTitle.isEmpty() && !projectDescription.isEmpty() && !assignedTask.isEmpty()){
+            StringBuilder outputBuilder=new StringBuilder();
+            outputBuilder.append("Member Name: ").append(memberName).append("\n");
+            outputBuilder.append("Project Title: ").append(projectTitle).append("\n");
+            outputBuilder.append("Project Description: ").append(projectDescription).append("\n");
+            outputBuilder.append("Assign Task: ").append(assignedTask);
+            infoTextArea.setText(outputBuilder.toString());
+            
+        }else{
+            infoTextArea.setText("Please fill all the fields.");
+            
+        }
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        infoTextArea.clear();
+    }
+
+//    private void showSaveButtonOnMouseClick(ActionEvent event) {
+//        showInfo();
+    
+//    }
+
+    @FXML
+    private void showButtonOnMouseClick(ActionEvent event) {
+        showInfo();
     }
     
 }
