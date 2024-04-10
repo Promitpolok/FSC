@@ -30,6 +30,9 @@
             <Label fx:id="ShowName" layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Name:" />
             <Label fx:id="ShowMembershipType" layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Membership type:" />
             <Label fx:id="ShowID" layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="ID:" />
+            <Button layoutX="54.0" layoutY="237.0" mnemonicParsing="false" onAction="#CreateMembershipOnclick" text="CreateMembership " />
+            <Button layoutX="52.0" layoutY="283.0" mnemonicParsing="false" onAction="#GoToProductPageOnClick" text="Products" />
+            <Button layoutX="52.0" layoutY="321.0" mnemonicParsing="false" onAction="#SignOutOnClick" text="SignOut" />
          </children>
       </AnchorPane>
    </left>

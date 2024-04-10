@@ -44,6 +44,10 @@ public class BuyerProfileController implements Initializable {
     }
     
     @FXML
-    private void SaveEverythingOnclick (ActionEvent event) {
+    private void SaveEverythingOnClick (ActionEvent event) {
+    }
+
+    @FXML
+    private void GoBackOnClick(ActionEvent event) {
     }
 }

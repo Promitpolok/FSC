@@ -40,6 +40,7 @@
          <children>
             <Label fx:id="ShowBuyerName" layoutX="13.0" layoutY="31.0" prefHeight="17.0" prefWidth="81.0" style="-fx-background-color: white;" text="Name" />
             <Label fx:id="ShowBuyerID" layoutX="12.0" layoutY="71.0" prefHeight="17.0" prefWidth="84.0" style="-fx-background-color: white;" text="ID" />
+            <Button layoutX="14.0" layoutY="119.0" mnemonicParsing="false" onAction="#GoBackOnClick" text="Back" />
          </children>
       </AnchorPane>
    </left>

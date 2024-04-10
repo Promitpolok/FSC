@@ -38,5 +38,9 @@ public class BuyerLiveChatController implements Initializable {
     @FXML
     private void ClickToSendToCustomerSpecialist(ActionEvent event) {
     }
+
+    @FXML
+    private void GoBackOnClick(ActionEvent event) {
+    }
     
 }

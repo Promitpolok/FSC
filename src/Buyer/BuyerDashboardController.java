@@ -49,5 +49,13 @@ public class BuyerDashboardController implements Initializable {
     @FXML
     private void UpdateProfileOnClick(ActionEvent event) {
     }
+
+    @FXML
+    private void CreateMembershipOnclick(ActionEvent event) {
+    }
+
+    @FXML
+    private void GoToProductPageOnClick(ActionEvent event) {
+    }
     
 }

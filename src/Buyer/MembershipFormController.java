@@ -44,5 +44,9 @@ public class MembershipFormController implements Initializable {
     @FXML
     private void SubmitMembershipOnClick(ActionEvent event) {
     }
+
+    @FXML
+    private void GoBackOnClick(ActionEvent event) {
+    }
     
 }

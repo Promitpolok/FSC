@@ -21,5 +21,6 @@
          </font>
       </Text>
       <Label fx:id="ShowCustomerSpecialistMessage" layoutX="58.0" layoutY="266.0" prefHeight="60.0" prefWidth="313.0" style="-fx-background-color: white;" text="Specialist message:" textFill="#dd1313" />
+      <Button layoutX="17.0" layoutY="12.0" mnemonicParsing="false" onAction="#GoBackOnClick" text="Back" />
    </children>
 </AnchorPane>

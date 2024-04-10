@@ -60,5 +60,9 @@ public class CartItemsController implements Initializable {
     @FXML
     private void AddToCartTableOnClick(ActionEvent event) {
     }
+
+    @FXML
+    private void GoBackOnClick(ActionEvent event) {
+    }
     
 }

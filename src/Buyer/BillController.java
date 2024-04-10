@@ -9,20 +9,20 @@ import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
+import javafx.scene.control.TableView;
 
 /**
  * FXML Controller class
  *
  * @author User
  */
-public class BuyerFeedbackController implements Initializable {
+public class BillController implements Initializable {
 
     @FXML
-    private TextArea TypeFeedbackMessage;
+    private TableView<?> ShowCartItemsTable;
     @FXML
-    private TextField TypeID;
+    private Label ShowTotalBill;
 
     /**
      * Initializes the controller class.
@@ -33,7 +33,7 @@ public class BuyerFeedbackController implements Initializable {
     }    
 
     @FXML
-    private void BuyerSubmitFeedback(ActionEvent event) {
+    private void ConfirmBillOnClick(ActionEvent event) {
     }
 
     @FXML
