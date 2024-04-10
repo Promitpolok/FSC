@@ -8,24 +8,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Buyer.MembershipFormController">
    <children>
-      <RadioButton layoutX="179.0" layoutY="71.0" mnemonicParsing="false" text="Silver" />
-      <RadioButton layoutX="329.0" layoutY="71.0" mnemonicParsing="false" text="Platinum" />
+      <RadioButton fx:id="SilverMembershipRadioButton" layoutX="179.0" layoutY="71.0" mnemonicParsing="false" text="Silver" />
+      <RadioButton fx:id="PlatinumMembershipRadioButton" layoutX="329.0" layoutY="71.0" mnemonicParsing="false" text="Platinum" />
       <Text layoutX="196.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Membership">
          <font>
             <Font size="28.0" />
          </font>
       </Text>
-      <TextField layoutX="214.0" layoutY="122.0" />
-      <TextField layoutX="214.0" layoutY="158.0" />
-      <TextField layoutX="214.0" layoutY="194.0" />
-      <Label layoutX="153.0" layoutY="243.0" prefHeight="17.0" prefWidth="271.0" style="-fx-background-color: red;" text="Membership Annual Fee:" />
+      <TextField fx:id="NameTextField" layoutX="214.0" layoutY="122.0" />
+      <TextField fx:id="IDTextField" layoutX="214.0" layoutY="158.0" />
+      <TextField fx:id="AddressTextField" layoutX="214.0" layoutY="194.0" />
+      <Label fx:id="ShowMembershipFeesLabel" layoutX="153.0" layoutY="243.0" prefHeight="17.0" prefWidth="271.0" style="-fx-background-color: red;" text="Membership Annual Fee: " />
       <Text layoutX="130.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
       <Text layoutX="130.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
       <Text layoutX="130.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
-      <Button layoutX="247.0" layoutY="303.0" mnemonicParsing="false" text="Submit" />
+      <Button layoutX="247.0" layoutY="303.0" mnemonicParsing="false" onAction="#SubmitMembershipOnClick" text="Submit" />
       <Text layoutX="139.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If membership successful it will show on your dashboard!" />
    </children>
 </AnchorPane>

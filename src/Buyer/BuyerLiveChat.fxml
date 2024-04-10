@@ -8,18 +8,18 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Buyer.BuyerLiveChatController">
    <children>
       <Text layoutX="53.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your ID " />
-      <TextField layoutX="152.0" layoutY="59.0" />
-      <Button layoutX="152.0" layoutY="210.0" mnemonicParsing="false" text="Send To Customer Support Specialist" />
-      <TextArea layoutX="151.0" layoutY="88.0" prefHeight="99.0" prefWidth="200.0" />
+      <TextField fx:id="TypeIDForLiveChat" layoutX="152.0" layoutY="59.0" />
+      <Button layoutX="152.0" layoutY="210.0" mnemonicParsing="false" onAction="#ClickToSendToCustomerSpecialist" text="Send To Customer Support Specialist" />
+      <TextArea fx:id="EnterLiveChatMessage" layoutX="151.0" layoutY="88.0" prefHeight="99.0" prefWidth="200.0" />
       <Text layoutX="43.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter message" />
       <Text layoutX="226.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Live Chat ">
          <font>
             <Font size="27.0" />
          </font>
       </Text>
-      <Label layoutX="58.0" layoutY="266.0" prefHeight="60.0" prefWidth="313.0" style="-fx-background-color: white;" text="Specialist message:" textFill="#dd1313" />
+      <Label fx:id="ShowCustomerSpecialistMessage" layoutX="58.0" layoutY="266.0" prefHeight="60.0" prefWidth="313.0" style="-fx-background-color: white;" text="Specialist message:" textFill="#dd1313" />
    </children>
 </AnchorPane>
