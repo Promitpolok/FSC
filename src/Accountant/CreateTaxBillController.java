@@ -36,7 +36,7 @@ public class CreateTaxBillController implements Initializable {
     @FXML
     private TextField statusTextField; 
     
-    private ArrayList<TaxBill> taxBillList;
+    //private ArrayList<TaxBill> taxBillList;
 
     /**
      * Initializes the controller class.
@@ -61,45 +61,57 @@ myStage.setScene(myScene);
 myStage.show();  
     }
 
+    
     @FXML
-    private void addButtonMouseOnClick(ActionEvent event) { 
+    private void addButtonMouseOnClick(ActionEvent event) {
+    try {
+        float income = Float.parseFloat(incomeTaxtField.getText());
+        float unitTax = Float.parseFloat(unitTaxTextField.getText());
+
+        TaxBill newTaxBill = new TaxBill(statusTextField.getText(), income, unitTax);
+
+        overViewTextArea.appendText(newTaxBill.toString() + "\n");
+
+        incomeTaxtField.clear();
+        unitTaxTextField.clear();
+        statusTextField.clear();
+    } catch (NumberFormatException e) {
 
     }
-
-    @FXML
-    private void viewDataButtonMouseOnClick(ActionEvent event) {
-    }
-
+}   
     @FXML
     private void incomeTextFieldMouseOnClick(ActionEvent event) { 
-        Integer income=incomeTaxtField.getLength();
-      
-        
+       try {
+        float income = Float.parseFloat(incomeTaxtField.getText());
+        float unitTax = 0.0f;
+ 
+        if (income >= 0 && income <= 1000000) {
+            unitTax = 1.0f;
+        }
+        else if (income > 1000000 && income <= 5000000) {
+            unitTax = 1.5f;
+        } 
+        else if (income > 5000000 && income <= 10000000) {
+            unitTax = 2.0f;
+        }
+        else if (income > 10000000) {
+            unitTax = 2.5f;
+        }
+        else {
+            unitTaxTextField.clear();
+            return; 
+        }
+        unitTaxTextField.setText(String.valueOf(unitTax));
+    } catch (NumberFormatException e) {
+        unitTaxTextField.clear();
+    }
+}
 
-// switch (){
-           // case incomeTaxtField.setText(value)
-        
-      //  }
-        
-        
-        
-        
-    }}
-        //int a;
-        //a= Integer.parseInt(incomeTaxtField.getText());
-       
-        
-       //b=Integer.parseInt(unitTaxTextField.getText());
-       
-       //if (a<0){
-          // unitTaxTextField.setText("0");
-       //}
-       //if (a>1) {
-          // unitTaxTextField.setText(".5");             
-      // }
-       //if(a) 
+    @FXML
+    private void saveButtonMouseOnClick(ActionEvent event) {
+    }
 
-       // }
+        }
 
     
     

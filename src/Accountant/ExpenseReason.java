@@ -4,16 +4,19 @@
  */
 package Accountant;
 
+import java.io.Serializable;
+import java.time.LocalDate;
+
 /**
  *
  * @author USER
  */
-class ExpenseReason {
+public class ExpenseReason implements Serializable{
     private String spendReason;
     private float amount;
-    private Integer date;
+    private LocalDate date;
 
-    public ExpenseReason(String spendReason, float amount, Integer date) {
+    public ExpenseReason(String spendReason, float amount, LocalDate date) {
         this.spendReason = spendReason;
         this.amount = amount;
         this.date = date;
@@ -35,17 +38,17 @@ class ExpenseReason {
         this.amount = amount;
     }
 
-    public Integer getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Integer date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
     @Override
     public String toString() {
-        return "ExpenseReason{" + "spendReason=" + spendReason + ", amount=" + amount + ", date=" + date + '}';
+        return  "spendReason=" + spendReason + ", amount=" + amount + ", date=" + date ;
     }
 
     

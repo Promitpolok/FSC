@@ -10,7 +10,7 @@ package Accountant;
  */
 public class TaxBill { 
     private String status; 
-    private float income,unitTax;
+    private float income,unitTax; 
 
     public TaxBill(String status, float income, float unitTax) {
         this.status = status;
@@ -50,7 +50,7 @@ public class TaxBill {
 
     @Override
     public String toString() {
-        return "Status=" + status +"\n"+ ", Income=" + income +"BDT"+ ", unitTax=" + unitTax +"%"+"Total Tax Bill"+ getTaxBillAmount()+"BDT";
+        return "Status=  " + status +"\n"+ "Income=" + income +"  BDT"+ "\n"+ "UnitTax=  " + unitTax +"%"+ "\n"+"Total Tax Bill  "+ getTaxBillAmount()+"  BDT";
     }
 
     

@@ -4,10 +4,15 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Digital_Marketing_Excutive/CreateAdsController.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/CreateBillController.java</file>
             <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/CreateTaxBillController.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/ExpensesController.java</file>
             <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/TaxBill.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/EditBillController.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/ExpenseReason.java</file>
             <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Digital_Marketing_Excutive/AdsHelper.java</file>
             <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Login/MainApplicationClass.java</file>
+            <file>file:/C:/Users/USER/Documents/GitHub/FSC/src/Accountant/CreateExpenseController.java</file>
         </group>
     </open-files>
 </project-private>

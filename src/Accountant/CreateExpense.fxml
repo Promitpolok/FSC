@@ -31,6 +31,11 @@
             <TableColumn fx:id="dateTableColumn" prefWidth="152.0" text="Date" />
         </columns>
       </TableView>
-      <Button layoutX="544.0" layoutY="398.0" mnemonicParsing="false" onAction="#showExpenseButtonMouseOnClick" prefHeight="112.0" prefWidth="119.0" text="Show Expense" />
+      <Button layoutX="545.0" layoutY="356.0" mnemonicParsing="false" onAction="#showExpenseButtonMouseOnClick" prefHeight="112.0" prefWidth="119.0" text="Show Expense" />
+      <Button layoutX="545.0" layoutY="492.0" mnemonicParsing="false" onAction="#saveButtonMouseOnClick" prefHeight="63.0" prefWidth="119.0" text="Save">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

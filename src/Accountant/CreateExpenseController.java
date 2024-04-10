@@ -47,7 +47,7 @@ public class CreateExpenseController implements Initializable {
     @FXML
     private TableColumn<ExpenseReason, String> dateTableColumn; 
     
-    private ArrayList <ExpenseReason> expensesReasonList;
+    private ArrayList <ExpenseReason> expensesReasonList=new ArrayList<>();
     
 
     /**
@@ -55,7 +55,7 @@ public class CreateExpenseController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) { 
-                expensesReasonList = new ArrayList<>();
+               // expensesReasonList = new ArrayList<>();
                 spendReasonComboBox.getItems().addAll(
                        "Electricity Bill",
                        "Water Bill",
@@ -106,8 +106,7 @@ myStage.show();
                   new ExpenseReason(
                   spendReasonComboBox.getValue(),
                   Float.parseFloat(amountTextField.getText()),
-                  LocalDate
-        //datePicker.getValue(x)
+        datePicker.getValue()
                                                           
                 )
         
@@ -128,6 +127,38 @@ myStage.show();
         }
         
         
+    }
+
+    @FXML
+    private void saveButtonMouseOnClick(ActionEvent event) { 
+//         File f = null;
+//        FileOutputStream fos = null;
+//        ObjectOutputStream oos = null;
+//        try {
+//
+//            f = new File("Task.bin");
+//
+//            if (f.exists()) {
+//                fos = new FileOutputStream(f, true);
+//                oos = new AppendableObjectOutputStream(fos);
+//
+//            } else {
+//                fos = new FileOutputStream(f);
+//                oos = new ObjectOutputStream(fos);
+//            }
+//
+//            oos.writeObject(newTask);
+//            oos.close();
+//            return true;
+//
+//        } catch (IOException e) {
+//            if (oos != null) {
+//                try {
+//                    oos.close();
+//                } catch (IOException ex) {
+//                    Logger.getLogger(Nurse.class.getName()).log(Level.SEVERE, null, ex);
+//                }
+
     }
 
 

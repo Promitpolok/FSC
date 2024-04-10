@@ -21,9 +21,12 @@
       <TextField fx:id="incomeTaxtField" layoutX="150.0" layoutY="185.0" onAction="#incomeTextFieldMouseOnClick" prefHeight="31.0" prefWidth="187.0" />
       <TextField fx:id="unitTaxTextField" layoutX="187.0" layoutY="230.0" prefHeight="31.0" prefWidth="150.0" />
       <Button layoutX="382.0" layoutY="157.0" mnemonicParsing="false" onAction="#addButtonMouseOnClick" prefHeight="96.0" prefWidth="95.0" text="ADD" />
-      <Button layoutX="525.0" layoutY="157.0" mnemonicParsing="false" onAction="#viewDataButtonMouseOnClick" prefHeight="96.0" prefWidth="103.0" text="View Data" />
+      <Button layoutX="525.0" layoutY="157.0" mnemonicParsing="false" onAction="#saveButtonMouseOnClick" prefHeight="96.0" prefWidth="103.0" text="Save" />
       <TextArea fx:id="overViewTextArea" layoutX="51.0" layoutY="347.0" prefHeight="217.0" prefWidth="588.0" />
-      <Label layoutX="64.0" layoutY="302.0" prefHeight="31.0" prefWidth="87.0" text="OverView" />
+      <Label layoutX="64.0" layoutY="302.0" prefHeight="31.0" prefWidth="87.0" text="OverView">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Label>
       <TextField fx:id="statusTextField" layoutX="150.0" layoutY="142.0" prefHeight="31.0" prefWidth="187.0" />
    </children>
 </AnchorPane>
