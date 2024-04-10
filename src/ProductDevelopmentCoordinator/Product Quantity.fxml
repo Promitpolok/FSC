@@ -24,5 +24,10 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </TextArea>
+      <Button layoutX="396.0" layoutY="108.0" mnemonicParsing="false" onAction="#clearButtonOnMouseClick" prefHeight="31.0" prefWidth="132.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
