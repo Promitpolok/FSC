@@ -6,6 +6,7 @@ package Login;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -36,17 +37,41 @@ public class RegisterUserSceneController implements Initializable {
     private PasswordField passwordField;
     @FXML
     private ComboBox<String> selectUserTypeComboBox;
+    
+    private ArrayList <UserName> UserList;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
+       UserList= new ArrayList<>();
+        
+        selectUserTypeComboBox.getItems().addAll(
+                "Buyer"
+                ); 
+       
     }    
 
     @FXML
     private void registerButtonOnMouseClick(ActionEvent event) throws IOException {
+        
+        Parent root = null;
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Login_Interface.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+Login_InterfaceController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show(); 
+    }
+
+    @FXML
+    private void backButtonOnMouseClick(ActionEvent event) throws IOException {
         
         Parent root = null;
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Login_Interface.fxml"));

@@ -15,12 +15,7 @@
          </font>
       </Button>
       <ComboBox fx:id="productNameComboBox" layoutX="38.0" layoutY="102.0" prefWidth="150.0" promptText="Product Name" />
-      <Button layoutX="604.0" layoutY="102.0" mnemonicParsing="false" onAction="#SetPriceButtonOnMouseClick" prefHeight="31.0" prefWidth="90.0" text="Set Price">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button layoutX="216.0" layoutY="102.0" mnemonicParsing="false" onAction="#SelectCategoryButtonOnMouseClick" prefHeight="31.0" prefWidth="135.0" text="Select Category">
+      <Button layoutX="433.0" layoutY="102.0" mnemonicParsing="false" onAction="#SetPriceButtonOnMouseClick" prefHeight="31.0" prefWidth="90.0" text="Set Price">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -45,6 +40,6 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </TextArea>
-      <TextField fx:id="enterPriceTextField" layoutX="388.0" layoutY="102.0" promptText="Enter Price" />
+      <TextField fx:id="enterPriceTextField" layoutX="216.0" layoutY="102.0" promptText="Enter Price" />
    </children>
 </AnchorPane>
