@@ -72,13 +72,13 @@ myStage.show();
         
         String[] tasks = {
             //"Today's Task: Complete Project Proposal",
-            "Today's Task: Product Taste Checking",
-            "Today's Task: Product Quantity Checking",
+            "Today's Task: Product Taste Checking.",
+            "Today's Task: Product Quantity Checking.",
             //"Today's Task: Conduct Market Research",
             //"Today's Task: Prepare Project Timeline",
-            "Today's Task: Add New Product",
-            "Today's Task: Check Notifications",
-            "Today's Task: Collaboration",
+            "Today's Task: Add New Product.",
+            "Today's Task: Check Notifications.",
+            "Today's Task: Collaboration.",
             
         };
 

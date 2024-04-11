@@ -17,6 +17,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -30,6 +31,8 @@ public class InventoryManagementController implements Initializable {
     private ComboBox<String> selectProductComboBox;
     
     private ArrayList <CartItem> cartList;
+    @FXML
+    private TextArea productRecordsTextArea;
 
     /**
      * Initializes the controller class.
@@ -82,12 +85,17 @@ myStage.setScene(myScene);
 myStage.show(); 
     }
 
-    @FXML
-    private void StoreProductRecordsButtonOnMouseClick(ActionEvent event) {
-    }
 
     @FXML
     private void ViewProductDetailsButtonOnMouseClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void saveProductRecordsButtonOnMouseClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
     }
     
 }
