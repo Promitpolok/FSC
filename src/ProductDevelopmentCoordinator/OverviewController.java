@@ -6,6 +6,7 @@ package ProductDevelopmentCoordinator;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.Random;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -26,6 +27,8 @@ public class OverviewController implements Initializable {
 
     @FXML
     private TextArea overViewInfoTextArea;
+    
+    private Random random = new Random();
 
     /**
      * Initializes the controller class.
@@ -51,8 +54,46 @@ myStage.setScene(myScene);
 myStage.show(); 
     }
 
+//    private void CheckOutButtonOnMouseClick(ActionEvent event) {
+//        
+//        String dailyTask=generateDailyTask();
+//        overViewInfoTextArea.setText(dailyTask);
+//    }
+    
+    
     @FXML
-    private void CheckOutButtonOnMouseClick(ActionEvent event) {
+    private void taskViewButtonOnMouseClick(ActionEvent event) {
+        String dailyTask=generateDailyTask();
+        overViewInfoTextArea.setText(dailyTask);
+        
     }
+    
+    private String generateDailyTask() {
+        
+        String[] tasks = {
+            //"Today's Task: Complete Project Proposal",
+            "Today's Task: Product Taste Checking",
+            "Today's Task: Product Quantity Checking",
+            //"Today's Task: Conduct Market Research",
+            //"Today's Task: Prepare Project Timeline",
+            "Today's Task: Add New Product",
+            "Today's Task: Check Notifications",
+            "Today's Task: Collaboration",
+            
+        };
+
+        
+        int index = random.nextInt(tasks.length);
+
+        return tasks[index];
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        
+        overViewInfoTextArea.clear();
+    }
+
+    
     
 }
