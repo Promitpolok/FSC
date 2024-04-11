@@ -35,12 +35,17 @@
             <Font name="System Bold" size="18.0" />
          </font>
       </TextArea>
-      <Button layoutX="455.0" layoutY="73.0" mnemonicParsing="false" onAction="#showButtonOnMouseClick" prefHeight="31.0" prefWidth="129.0" text="Show ">
+      <Button layoutX="455.0" layoutY="13.0" mnemonicParsing="false" onAction="#showButtonOnMouseClick" prefHeight="31.0" prefWidth="129.0" text="Show ">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
       <Button layoutX="478.0" layoutY="131.0" mnemonicParsing="false" onAction="#clearButtonOnMouseClick" prefHeight="31.0" prefWidth="83.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="457.0" layoutY="73.0" mnemonicParsing="false" onAction="#sendButtonOnMouseClick" prefHeight="31.0" prefWidth="129.0" text="Send">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

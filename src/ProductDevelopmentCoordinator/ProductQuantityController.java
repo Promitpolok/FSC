@@ -105,7 +105,7 @@ myStage.show();
             case "On Micronizen Creatine":
                 return 20;
             case "Nitrotech Whey Gold":
-                //return 0;
+                return 10;
             case"Warrior Protein Ber":
                 return 30;    
             case  "ISO Xp":

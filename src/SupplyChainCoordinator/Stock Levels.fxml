@@ -6,14 +6,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="783.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SupplyChainCoordinator.StockLevelsController">
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="690.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SupplyChainCoordinator.StockLevelsController">
    <children>
       <Button layoutX="32.0" layoutY="37.0" mnemonicParsing="false" onAction="#BackButtonOnMouseClick" prefHeight="31.0" prefWidth="73.0" text="Back">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="458.0" layoutY="104.0" mnemonicParsing="false" onAction="#CurrentStockButtonOnMouseClick" prefHeight="31.0" prefWidth="121.0" text="Current Stock">
+      <Button layoutX="368.0" layoutY="153.0" mnemonicParsing="false" onAction="#CurrentStockButtonOnMouseClick" prefHeight="31.0" prefWidth="121.0" text="Current Stock">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -24,14 +24,10 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TextArea fx:id="viewProductInfoTextArea" editable="false" layoutX="14.0" layoutY="342.0" prefHeight="200.0" prefWidth="676.0" text="View Product Info:">
+      <TextArea fx:id="viewProductInfoTextArea" editable="false" layoutX="6.0" layoutY="234.0" prefHeight="200.0" prefWidth="676.0" text="View Product Info:">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextArea>
-      <TextArea layoutX="392.0" layoutY="160.0" prefHeight="95.0" prefWidth="252.0" text="Show Product Quantity:">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font></TextArea>
    </children>
 </AnchorPane>

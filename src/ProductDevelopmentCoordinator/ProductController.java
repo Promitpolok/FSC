@@ -4,9 +4,12 @@
  */
 package ProductDevelopmentCoordinator;
 
+import SupplyChainCoordinator.StockLevelsController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -32,6 +35,9 @@ public class ProductController implements Initializable {
     private ComboBox<String> selectNewProductComboBox;
     
     private ArrayList <CartItem> cartList;
+    
+    private Map<String, Integer> stockLevels;
+    private Map<String, String> productInfo;
 
     /**
      * Initializes the controller class.
@@ -64,10 +70,37 @@ public class ProductController implements Initializable {
                 "Applied Nutrition",
                 "Plantinum Creatine"
                 
-                ); 
+                );
         
-    }    
+        stockLevels=new HashMap<>();
+        stockLevels.put("Nitrotech", 50);
+        stockLevels.put("100% Gold Standard Whey Protein", 30);
+        stockLevels.put("On Micronizen Creatine", 40);
+        stockLevels.put("Nitrotech Whey Gold", 10);
+        stockLevels.put("Warrior Protein Ber", 60);
+        stockLevels.put("ISO Xp", 50);
+        stockLevels.put("Dymatize Iso", 90);
+        stockLevels.put("Seriousmass", 70);
+        stockLevels.put("Mass Tech Extreme 2000", 80);
+        stockLevels.put("Mass Gainer", 20);
+        stockLevels.put("Hyper Mass Gainer", 100);
+        stockLevels.put("Xtend BCAA", 40);
+        stockLevels.put("Amino Energy", 120);
+        stockLevels.put("BPI Best BCAA", 130);
+        stockLevels.put("BCAA Energy", 140);
+        stockLevels.put("Lipo 6 Black Ultra Concentrate", 160);
+        stockLevels.put("Cuts", 150);
+        stockLevels.put("Evll Carnitine", 100);
+        stockLevels.put("HydeoXYCut Hardcore Elite",200);
+        stockLevels.put("Gold Creatine", 150);
+        stockLevels.put("Applied Nutrition", 160);
+        stockLevels.put("Plantinum Creatine", 190);
+        
+        
+        productInfo=new HashMap<>();
+        
 
+    }    
     @FXML
     private void BackButtonOnMouseClick(ActionEvent event) throws IOException {
         
@@ -100,12 +133,34 @@ myStage.setScene(myScene);
 myStage.show(); 
     }
 
-    @FXML
-    private void ViewProductButtonOnMouseClick(ActionEvent event) {
-    }
+//    private void ViewProductButtonOnMouseClick(ActionEvent event) {
+//        
+//        String selectedProduct=selectNewProductComboBox.getValue();
+//        if (selectedProduct!=null){
+//            String productDescription=productInfo.getOrDefault(selectedProduct, "No information available.");
+//            productInfoTextArea.setText("Product Information:\n\n" + selectedProduct + "\n" + productDescription);
+//        }else{
+//            productInfoTextArea.setText("Please select a product.");
+//        }
+//    }
+    
 
     @FXML
     private void ViewStockLevelsButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedProduct = selectNewProductComboBox.getValue();
+        if (selectedProduct != null) {
+            int stockLevel = stockLevels.getOrDefault(selectedProduct, 0);
+            productInfoTextArea.setText("Stock level for " + selectedProduct + ": " + stockLevel);
+        } else {
+            productInfoTextArea.setText("Please select a product.");
+        }
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        
+        productInfoTextArea.clear();
     }
     
 }

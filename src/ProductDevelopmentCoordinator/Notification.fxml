@@ -35,5 +35,10 @@
          </font>
       </Button>
       <ComboBox fx:id="selectNameComboBox" layoutX="413.0" layoutY="90.0" prefWidth="150.0" promptText="Select Name" />
+      <Button layoutX="250.0" layoutY="139.0" mnemonicParsing="false" onAction="#clearButtonOnMouseClick" prefHeight="31.0" prefWidth="66.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

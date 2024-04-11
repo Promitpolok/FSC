@@ -52,7 +52,7 @@ public class CollaborationController implements Initializable {
         
         selectTeamMemberComboBox.getItems().addAll(
                 "Supply Chain Coordinator", 
-                "Product Development Coordinator", 
+                //"Product Development Coordinator", 
                 "Accountant",
                 "Digital Marketing Executive",
                 "CEO",
@@ -113,6 +113,10 @@ myStage.show();
     @FXML
     private void showButtonOnMouseClick(ActionEvent event) {
         showInfo();
+    }
+
+    @FXML
+    private void sendButtonOnMouseClick(ActionEvent event) {
     }
     
 }

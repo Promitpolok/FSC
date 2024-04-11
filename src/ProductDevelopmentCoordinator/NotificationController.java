@@ -35,6 +35,8 @@ public class NotificationController implements Initializable {
     private ComboBox<String> selectNameComboBox;
     
     private ArrayList <UserName> UserList;
+    
+     private ArrayList<String> notifications;
 
     /**
      * Initializes the controller class.
@@ -42,11 +44,19 @@ public class NotificationController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
+        notifications = new ArrayList<>();
+        notifications.add("Hello from Supply Chain Coordinator");
+        notifications.add("Message from Accountant");
+        notifications.add("Notification from Digital Marketing Executive");
+        notifications.add("Important update from CEO");
+        notifications.add("Warehouse Associate checking in");
+        notifications.add("Customer Support Specialist here");
+        
         UserList= new ArrayList<>();
         
         selectNameComboBox.getItems().addAll(
                 "Supply Chain Coordinator", 
-                "Product Development Coordinator", 
+                //"Product Development Coordinator", 
                 "Accountant",
                 "Digital Marketing Executive",
                 "CEO",
@@ -72,10 +82,38 @@ myStage.show();
 
     @FXML
     private void ViewNotificationButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedName = selectNameComboBox.getValue();
+        if (selectedName != null) {
+            int index = selectNameComboBox.getItems().indexOf(selectedName);
+            if (index >= 0 && index < notifications.size()) {
+                String notification = notifications.get(index);
+                notificationTextArea.setText(notification);
+            } else {
+                notificationTextArea.setText("No notification available for " + selectedName);
+            }
+        } else {
+            notificationTextArea.setText("Please select a name to view notifications.");
+        }
     }
 
     @FXML
     private void SendMessageButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedName = selectNameComboBox.getValue();
+        String message = enterYourMessageTextField.getText();
+
+        if (selectedName != null && !message.isEmpty()) {
+            notificationTextArea.appendText("Message sent successfully to " + selectedName + ": " + message + "\n");
+            enterYourMessageTextField.clear();
+        } else {
+            notificationTextArea.appendText("Please select a name and enter a message.\n");
+        }
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        notificationTextArea.clear();
     }
     
 }
