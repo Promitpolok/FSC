@@ -2,9 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package ProductDevelopmentCoordinator;
+package SupplyChainCoordinator;
 
-import Login.UserName;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -26,21 +25,20 @@ import javafx.stage.Stage;
  *
  * @author Promit
  */
-public class CollaborationController implements Initializable {
+public class SupplyChainCollaborationController implements Initializable {
 
     @FXML
     private ComboBox<String> selectTeamMemberComboBox;
     @FXML
-    private TextField projectTitleTextField;
-    @FXML
-    private TextField projectDescriptionTextField;
-    private ComboBox<String> addTeamMemberComboBox;
-    @FXML
-    private TextField assignTaskTextField;
+    private TextArea infoTextArea;
     
     private ArrayList <UserName> UserList;
     @FXML
-    private TextArea infoTextArea;
+    private TextField enterDescriptionTextField;
+    @FXML
+    private TextField enterProjectTitleTextField;
+    @FXML
+    private TextField assignTaskTextField;
 
     /**
      * Initializes the controller class.
@@ -51,39 +49,39 @@ public class CollaborationController implements Initializable {
         UserList= new ArrayList<>();
         
         selectTeamMemberComboBox.getItems().addAll(
-                "Supply Chain Coordinator", 
-                //"Product Development Coordinator", 
+                //"Supply Chain Coordinator", 
+                "Product Development Coordinator", 
                 //"Accountant",
                 //"Digital Marketing Executive",
                 "CEO"
                 //"Warehouse Associate",  
-                //"Customer Support Specialist"
+               // "Customer Support Specialist"
         
         
         );
         
-    }
+    }    
 
     @FXML
-    private void BackButtonOnMouseClick(ActionEvent event) throws IOException {
+    private void backButtonOnMouseClick(ActionEvent event) throws IOException {
         
         Parent root = null;
-        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("ProductDevelopmentCoordinatorDashboard.fxml"));
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Dashboard Supply Chain Coordinator.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-ProductDevelopmentCoordinatorDashboardController x = myLoader.getController();
+DashboardSupplyChainCoordinatorController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
-myStage.show(); 
+myStage.show();
     }
     
     private void showInfo(){
         String memberName=selectTeamMemberComboBox.getValue();
-        String projectTitle=projectTitleTextField.getText();
-        String projectDescription=projectDescriptionTextField.getText();
+        String projectTitle=enterProjectTitleTextField.getText();
+        String projectDescription=enterDescriptionTextField.getText();
         String assignedTask=assignTaskTextField.getText();
         
         if (memberName!=null && !projectTitle.isEmpty() && !projectDescription.isEmpty() && !assignedTask.isEmpty()){
@@ -101,22 +99,18 @@ myStage.show();
     }
 
     @FXML
-    private void clearButtonOnMouseClick(ActionEvent event) {
-        infoTextArea.clear();
-    }
-
-//    private void showSaveButtonOnMouseClick(ActionEvent event) {
-//        showInfo();
-    
-//    }
-
-    @FXML
     private void showButtonOnMouseClick(ActionEvent event) {
+        
         showInfo();
     }
 
     @FXML
     private void sendButtonOnMouseClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        infoTextArea.clear();
     }
     
 }

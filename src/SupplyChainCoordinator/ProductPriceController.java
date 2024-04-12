@@ -89,19 +89,76 @@ myStage.show();
 
     @FXML
     private void SetPriceButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedProduct = productNameComboBox.getValue();
+        String price = enterPriceTextField.getText();
+        if (selectedProduct != null && !price.isEmpty()) {
+ 
+        productInfoTextArea.setText("Product: " + selectedProduct + "\nPrice: " + price);
+    }
+        
+}
+
+
+    private void setProductPrice(String productName, String price) {
+    
+      System.out.println("Setting price for " + productName + " to " + price);
+
     }
 
 
     @FXML
     private void UpdateProductButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedProduct = productNameComboBox.getValue();
+        if (selectedProduct != null) {
+        
+           String updatedProductName = updateProductName(selectedProduct);
+
+           productNameComboBox.getItems().remove(selectedProduct);
+           productNameComboBox.getItems().add(updatedProductName);
+           productNameComboBox.setValue(updatedProductName);
+           productInfoTextArea.setText("Updated Product: " + updatedProductName);
+    }
+}
+
+
+    private String updateProductName(String productName) {
+    
+        return productName + " Updated";
     }
 
     @FXML
     private void UpdatePriceButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedProduct = productNameComboBox.getValue();
+        String price = enterPriceTextField.getText();
+        if (selectedProduct != null && !price.isEmpty()) {
+           updateProductPrice(selectedProduct, price); 
+           productInfoTextArea.setText("Product: " + selectedProduct + "\nUpdated Price: " + price);
+    }
+}
+
+    private void updateProductPrice(String productName, String price) {
+    
+        System.out.println("Updating price for " + productName + " to " + price);
+        
     }
 
     @FXML
     private void DeleteProductButtonOnMouseClick(ActionEvent event) {
+        
+        String selectedProduct = productNameComboBox.getValue();
+        if (selectedProduct != null) {
+            productNameComboBox.getItems().remove(selectedProduct);
+            productInfoTextArea.clear();
+        }
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        
+        productInfoTextArea.clear();
     }
     
 }
