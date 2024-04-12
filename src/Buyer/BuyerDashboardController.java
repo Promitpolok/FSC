@@ -26,9 +26,9 @@ public class BuyerDashboardController implements Initializable {
     @FXML
     private Label ShowID;
     @FXML
-    private TextArea ShowCoupon;
+    private Label ShowCoupon;
     @FXML
-    private TextArea ShowDiscount;
+    private Label ShowDiscount;
 
     /**
      * Initializes the controller class.
@@ -36,10 +36,13 @@ public class BuyerDashboardController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        ShowCoupon.setText("1) Coupon 10% OFF for 100TK bill !!!");
+        ShowDiscount.setText("2) Eid Discount on everything 20% !!!! ( ONLY for Platinum membership)"); 
     }    
 
     @FXML
     private void MakeCartOnClick(ActionEvent event) {
+        
     }
 
     @FXML
@@ -56,6 +59,10 @@ public class BuyerDashboardController implements Initializable {
 
     @FXML
     private void GoToProductPageOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void SignOutOnClick(ActionEvent event) {
     }
     
 }
