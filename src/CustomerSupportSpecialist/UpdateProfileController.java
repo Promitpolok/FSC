@@ -34,19 +34,25 @@ public class UpdateProfileController implements Initializable {
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
         // TODO
+        NameLabel.setText("Sayed");
+        IDLabel.setText("2211");
     }    
 
     @FXML
     private void SaveEverythingOnClick(ActionEvent event) {
+        
     }
 
     @FXML
     private void ChangeAddressOnClick(ActionEvent event) {
+        
     }
 
     @FXML
     private void TakeLeaveOnClick(ActionEvent event) {
+        
     }
 
     @FXML
