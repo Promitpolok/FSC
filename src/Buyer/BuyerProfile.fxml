@@ -12,8 +12,6 @@
       <Label fx:id="ShowBuyerID" layoutX="177.0" layoutY="120.0" prefHeight="43.0" prefWidth="221.0" style="-fx-background-color: white;" text="ID:" />
       <Label fx:id="ShowBuyerMembershipType" layoutX="177.0" layoutY="265.0" prefHeight="36.0" prefWidth="221.0" style="-fx-background-color: white;" text="Membership Type:" />
       <Label fx:id="ShowBuyerAddress" layoutX="177.0" layoutY="191.0" prefHeight="36.0" prefWidth="221.0" style="-fx-background-color: white;" text="Address:" />
-      <Button layoutX="262.0" layoutY="330.0" mnemonicParsing="false" onAction="#SaveEverythingOnClick" text="Save" />
-      <Button layoutX="436.0" layoutY="271.0" mnemonicParsing="false" onAction="#ChangeMembershipTypeOnClick" text="Change" />
       <Button layoutX="439.0" layoutY="197.0" mnemonicParsing="false" onAction="#ChangeAddressOnClick" text="Change" />
       <Text layoutX="237.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profile">
          <font>

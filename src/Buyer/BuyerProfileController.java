@@ -8,8 +8,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -35,19 +40,24 @@ public class BuyerProfileController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void ChangeMembershipTypeOnClick(ActionEvent event) {
-    }
 
     @FXML
     private void ChangeAddressOnClick(ActionEvent event) {
     }
     
-    @FXML
-    private void SaveEverythingOnClick (ActionEvent event) {
-    }
 
     @FXML
     private void GoBackOnClick(ActionEvent event) {
+        Parent root = null;
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+BuyerDashboardController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();
     }
 }

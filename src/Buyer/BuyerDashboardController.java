@@ -32,13 +32,20 @@ public class BuyerDashboardController implements Initializable {
 
     /**
      * Initializes the controller class.
+
      */
-    @Override
+    /*@Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         ShowCoupon.setText("1) Coupon 10% OFF for 100TK bill !!!");
         ShowDiscount.setText("2) Eid Discount on everything 20% !!!! ( ONLY for Platinum membership)"); 
-    }    
+    }    */
+    @Override
+    public void initialize(String ShowName, int ShowID, String ShowMembershipType) {
+        // Set buyer details
+        ShowName.setText("Name: " + ShowName);
+        ShowID.setText("ID: " + ShowID);
+        ShowMembershipType.setText("Membership Type: " + ShowMembershipType);
 
     @FXML
     private void MakeCartOnClick(ActionEvent event) {
@@ -66,3 +73,27 @@ public class BuyerDashboardController implements Initializable {
     }
     
 }
+
+    @FXML
+    private void MakeCartOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void MakeFeedbackOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void UpdateProfileOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void CreateMembershipOnclick(ActionEvent event) {
+    }
+
+    @FXML
+    private void GoToProductPageOnClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void SignOutOnClick(ActionEvent event) {
+    }
