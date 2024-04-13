@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Digital_Marketing_Excutive.ViewAdsController">
    <children>
-      <Button layoutX="28.0" layoutY="39.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Back" />
-      <Label layoutX="176.0" layoutY="70.0" prefHeight="38.0" prefWidth="222.0" text="View Advertisment">
+      <Button layoutX="33.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="31.0" prefWidth="62.0" text="back" />
+      <Label layoutX="175.0" layoutY="67.0" prefHeight="44.0" prefWidth="250.0" text="View Advertisement">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <TextArea layoutX="38.0" layoutY="189.0" prefHeight="186.0" prefWidth="275.0" />
-      <Label layoutX="41.0" layoutY="143.0" text="Ads Number" />
-      <ComboBox layoutX="141.0" layoutY="138.0" prefWidth="150.0" />
-      <Button layoutX="406.0" layoutY="189.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="OK" />
-      <Button layoutX="404.0" layoutY="251.0" mnemonicParsing="false" text="Edit Ads" />
+      <Button layoutX="25.0" layoutY="128.0" mnemonicParsing="false" onAction="#okButtonOnClick" prefHeight="31.0" prefWidth="62.0" text="ok" />
+      <Button layoutX="260.0" layoutY="128.0" mnemonicParsing="false" onAction="#showAdsOnClick" text="Show Ads" />
+      <TextArea fx:id="viewAdsTextArea" layoutX="14.0" layoutY="214.0" prefHeight="200.0" prefWidth="546.0" />
+      <Label layoutX="24.0" layoutY="174.0" prefHeight="21.0" prefWidth="81.0" text="View Ads">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

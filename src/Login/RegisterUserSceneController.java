@@ -52,9 +52,8 @@ public class RegisterUserSceneController implements Initializable {
         FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Login_Interface.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
-
-Login_InterfaceController x = myLoader.getController();
 //x.setValue(value);
+
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
