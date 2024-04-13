@@ -58,6 +58,6 @@ BuyerDashboardController x = myLoader.getController();
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
-myStage.show();
+myStage.show();  
     }
 }
