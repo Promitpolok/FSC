@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="331.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Digital_Marketing_Excutive.Digital_Marketing_ExcutiveController">
    <children>
-      <MenuBar layoutY="7.0">
-        <menus>
-          <Menu mnemonicParsing="false" text="My Desk">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Advertisement" />
-                  <MenuItem mnemonicParsing="false" text="survey" />
-                  <MenuItem mnemonicParsing="false" text="Select Brand Ambassador" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="LogOut" />
-        </menus>
-      </MenuBar>
-      <Label layoutX="104.0" layoutY="149.0" prefHeight="75.0" prefWidth="377.0" text="WELCOME DIGITAL MARKETING EXCUTIVE!!">
+      <Label layoutX="179.0" layoutY="140.0" prefHeight="75.0" prefWidth="400.0" text="WELCOME DIGITAL MARKETING EXCUTIVE!!" underline="true">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
+      <VBox prefHeight="339.0" prefWidth="125.0" style="-fx-background-color: orange;">
+         <children>
+            <Button mnemonicParsing="false" onAction="#adsButtonOnClick" prefHeight="82.0" prefWidth="125.0" text="Advertisment" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#surveyButtonOnClick" prefHeight="81.0" prefWidth="125.0" text="Survey" />
+            <Button layoutX="10.0" layoutY="73.0" mnemonicParsing="false" onAction="#selectAmbassadorButtonOnClick" prefHeight="100.0" prefWidth="125.0" text="Select Brand Ambassador" textAlignment="CENTER" wrapText="true" />
+            <Button layoutX="10.0" layoutY="136.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" prefHeight="83.0" prefWidth="125.0" text="LogOut" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
