@@ -88,14 +88,35 @@ myStage.show();
 
     @FXML
     private void ViewProductDetailsButtonOnMouseClick(ActionEvent event) {
+        
+       if (selectProductComboBox.getSelectionModel().getSelectedItem() != null) {
+           String selectedProduct = selectProductComboBox.getSelectionModel().getSelectedItem();
+           productRecordsTextArea.appendText("This product record is saved: " + selectedProduct + "\n");
+           
+       } else {
+        productRecordsTextArea.appendText("Please select a product.\n");
+       } 
     }
 
     @FXML
     private void saveProductRecordsButtonOnMouseClick(ActionEvent event) {
+        
+        
+        if (selectProductComboBox.getSelectionModel().getSelectedItem() != null) {
+        
+            productRecordsTextArea.appendText("The product record is saved\n");
+            
+        } else {
+        
+            productRecordsTextArea.appendText("Please select a product\n");
+        }
+        
+  
     }
 
     @FXML
     private void clearButtonOnMouseClick(ActionEvent event) {
+        productRecordsTextArea.clear();
     }
     
 }

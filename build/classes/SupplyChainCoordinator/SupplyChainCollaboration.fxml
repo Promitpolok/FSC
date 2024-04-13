@@ -45,7 +45,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TextArea fx:id="infoTextArea" layoutX="-2.0" layoutY="200.0" prefHeight="200.0" prefWidth="606.0" text="Info">
+      <TextArea fx:id="infoTextArea" editable="false" layoutX="-2.0" layoutY="200.0" prefHeight="200.0" prefWidth="606.0" text="Info">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
