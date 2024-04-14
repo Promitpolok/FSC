@@ -20,7 +20,7 @@
          </font>
       </TextArea>
       <ComboBox fx:id="productNameComboBox" layoutX="16.0" layoutY="66.0" prefHeight="31.0" prefWidth="153.0" promptText="Product Name" />
-      <Button layoutX="549.0" layoutY="205.0" mnemonicParsing="false" onAction="#clearbuttonOnMouseClick" prefHeight="31.0" prefWidth="88.0" text="Clear">
+      <Button layoutX="448.0" layoutY="209.0" mnemonicParsing="false" onAction="#clearbuttonOnMouseClick" prefHeight="31.0" prefWidth="88.0" text="Clear">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -31,6 +31,11 @@
          </font>
       </TextField>
       <Button layoutX="346.0" layoutY="123.0" mnemonicParsing="false" onAction="#addbuttonOnMouseClick" prefHeight="31.0" prefWidth="78.0" text="Add">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="559.0" layoutY="209.0" mnemonicParsing="false" onAction="#savebuttonOnMouseClick" prefHeight="31.0" prefWidth="78.0" text="Save">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
