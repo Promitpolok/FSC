@@ -7,21 +7,16 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane id="AnchorPane" prefHeight="442.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Digital_Marketing_Excutive.ViewAdsController">
+<AnchorPane id="AnchorPane" prefHeight="469.0" prefWidth="600.0" style="-fx-background-color: #0598ff;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Digital_Marketing_Excutive.ViewAdsController">
    <children>
-      <Button layoutX="33.0" layoutY="36.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="31.0" prefWidth="62.0" text="back" />
-      <Label layoutX="175.0" layoutY="67.0" prefHeight="44.0" prefWidth="250.0" text="View Advertisement">
+      <Button layoutX="30.0" layoutY="38.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="31.0" prefWidth="72.0" text="Back" />
+      <Label layoutX="158.0" layoutY="69.0" prefHeight="44.0" prefWidth="249.0" text="View Advertisement">
          <font>
             <Font name="System Bold" size="24.0" />
          </font>
       </Label>
-      <Button layoutX="25.0" layoutY="128.0" mnemonicParsing="false" onAction="#okButtonOnClick" prefHeight="31.0" prefWidth="62.0" text="ok" />
-      <Button layoutX="260.0" layoutY="128.0" mnemonicParsing="false" onAction="#showAdsOnClick" text="Show Ads" />
-      <TextArea fx:id="viewAdsTextArea" layoutX="14.0" layoutY="214.0" prefHeight="200.0" prefWidth="546.0" />
-      <Label layoutX="24.0" layoutY="174.0" prefHeight="21.0" prefWidth="81.0" text="View Ads">
-         <font>
-            <Font name="System Bold Italic" size="18.0" />
-         </font>
-      </Label>
+      <Button layoutX="45.0" layoutY="148.0" mnemonicParsing="false" onAction="#okButtonOnClick" prefHeight="44.0" prefWidth="92.0" text="OK" />
+      <Button layoutX="315.0" layoutY="148.0" mnemonicParsing="false" onAction="#showAdsButtonOnClick" prefHeight="44.0" prefWidth="92.0" text="Show Ads" />
+      <TextArea fx:id="ShowAdsTextArea" layoutX="37.0" layoutY="224.0" prefHeight="200.0" prefWidth="519.0" />
    </children>
 </AnchorPane>

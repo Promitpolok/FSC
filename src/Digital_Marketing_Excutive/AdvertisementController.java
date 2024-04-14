@@ -48,32 +48,33 @@ myStage.show();
 
     @FXML
     private void createAdsButtonOnClick(ActionEvent event) throws IOException { 
-//                Parent root = null;
-//        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CreateAds.fxml"));
-//root = (Parent) myLoader.load();
-//Scene myScene = new Scene(root);
-//
-//CreateAdsController x = myLoader.getController();
-////x.setValue(value);
-//
-//Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//myStage.setScene(myScene);
-//myStage.show();  
-//    }
-//
-//    @FXML
-//    private void viewAdsButtonOnClick(ActionEvent event) throws IOException { 
-//                Parent root = null;
-//        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("ViewAds.fxml"));
-//root = (Parent) myLoader.load();
-//Scene myScene = new Scene(root);
-//
-//ViewAdsController x = myLoader.getController();
-////x.setValue(value);
-//
-//Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-//myStage.setScene(myScene);
-//myStage.show();   
+                Parent root = null;
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CreateAds.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+CreateAdsController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();  
+    }
+
+    @FXML
+    private void viewAdsButtonOnClick(ActionEvent event) throws IOException { 
+                Parent root = null;
+        FXMLLoader myLoader = new FXMLLoader(getClass().getResource("ViewAds.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+ViewAdsController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();  
+      
     }
 
     @FXML

@@ -23,7 +23,8 @@
       <ComboBox fx:id="quantityComboBox" layoutX="411.0" layoutY="189.0" prefHeight="31.0" prefWidth="113.0" />
       <TextField fx:id="priceTextFile" editable="false" layoutX="254.0" layoutY="189.0" prefHeight="31.0" prefWidth="105.0" />
       <TextArea fx:id="showAllTextArea" layoutX="34.0" layoutY="275.0" prefHeight="230.0" prefWidth="799.0" />
-      <Button fx:id="totalBillButton" layoutX="857.0" layoutY="333.0" mnemonicParsing="false" onAction="#totalBillButtonMouseOnClick" prefHeight="88.0" prefWidth="85.0" text="Total Bill" />
+      <Button fx:id="totalBillButton" layoutX="865.0" layoutY="275.0" mnemonicParsing="false" onAction="#totalBillButtonMouseOnClick" prefHeight="88.0" prefWidth="85.0" text="Total Bill" />
       <Button fx:id="addProductButton" layoutX="581.0" layoutY="189.0" mnemonicParsing="false" onAction="#addButtonMouseOnClick" prefHeight="53.0" prefWidth="85.0" text="Add" />
+      <Button layoutX="865.0" layoutY="384.0" mnemonicParsing="false" onAction="#saveButtonOnClick" prefHeight="95.0" prefWidth="85.0" text="Save" />
    </children>
 </AnchorPane>

@@ -244,4 +244,8 @@ myStage.show();
         }
         return totalAmount;
     }
+
+    @FXML
+    private void saveButtonOnClick(ActionEvent event) { 
+    }
 }

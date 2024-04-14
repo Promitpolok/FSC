@@ -23,8 +23,8 @@ public class MainApplicationClass extends Application {
     public void start(Stage stage) throws Exception {
         //Parent root = FXMLLoader.load(getClass().getResource("/ProductDevelopmentCoordinator/Collaboration.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("/ProductDevelopmentCoordinator/Collaboration.fxml"));
-          //Parent root = FXMLLoader.load(getClass().getResource("/Accountant/Accountant.fxml"));
-          Parent root = FXMLLoader.load(getClass().getResource("/Digital_Marketing_Excutive/Digital_Marketing_Excutive.fxml"));
+          Parent root = FXMLLoader.load(getClass().getResource("/Accountant/Accountant.fxml"));
+         // Parent root = FXMLLoader.load(getClass().getResource("/Digital_Marketing_Excutive/Digital_Marketing_Excutive.fxml"));
          // Parent root = FXMLLoader.load(getClass().getResource("/Digital_Marketing_Excutive/ViewAds.fxml"));
         
         Scene scene = new Scene(root);

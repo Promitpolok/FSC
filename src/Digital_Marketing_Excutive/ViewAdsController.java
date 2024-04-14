@@ -4,13 +4,11 @@
  */
 package Digital_Marketing_Excutive;
 
-import java.io.FileInputStream;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -29,7 +27,7 @@ import javafx.stage.Stage;
 public class ViewAdsController implements Initializable {
 
     @FXML
-    private TextArea viewAdsTextArea;
+    private TextArea ShowAdsTextArea;
 
     /**
      * Initializes the controller class.
@@ -55,28 +53,15 @@ myStage.show();
     }
 
     @FXML
-    private void okButtonOnClick(ActionEvent event) { 
-                ObservableList<AdsHelper> cartItem = FXCollections.observableArrayList();
-        AdsHelper i;
-        ObjectInputStream ois = null;
-        try {
-            ois = new ObjectInputStream(new FileInputStream("CreateAds.bin"));
-            while (true) {
-                i = (AdsHelper) ois.readObject();
-                System.out.println("The patient u read: " + i.toString());
-                cartItem.add(i);
-            }
-        } catch (IOException | ClassNotFoundException e) {
-            System.out.println("File reading done");
-        }
-        System.out.println(cartItem); 
-    }
+     private void okButtonOnClick(ActionEvent event) {
+     }
 
     @FXML
-    private void showAdsOnClick(ActionEvent event, Iterable<AdsHelper> cartItem) { 
-                        viewAdsTextArea.clear();
-        for (AdsHelper a: cartItem){
-            viewAdsTextArea.appendText(a.toString()+"\n"); 
-    }
+    private void showAdsButtonOnClick(ActionEvent event) {
+        // Show the ShowAdsTextArea
+        ShowAdsTextArea.setVisible(true);
     }
 }
+    
+
+
