@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package Buyer;
+package CustomerSupportSpecialist;
 
-import java.io.IOException;
+import Buyer.BuyerDashboardController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,8 +14,6 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
@@ -24,20 +22,10 @@ import javafx.stage.Stage;
  *
  * @author User
  */
-public class CartItemsController implements Initializable {
+public class FeedBackFromBuyersController implements Initializable {
 
     @FXML
-    private Label ShowBuyerName;
-    @FXML
-    private Label ShowBuyerID;
-    @FXML
-    private Label ShowOrderProcess;
-    @FXML
-    private TableView<?> CartItemsTable;
-    @FXML
-    private ComboBox<?> ItemsComboBox;
-    @FXML
-    private ComboBox<?> QuantityComboBox;
+    private TableView<?> FeedbackTableView;
 
     /**
      * Initializes the controller class.
@@ -47,28 +35,9 @@ public class CartItemsController implements Initializable {
         // TODO
     }    
 
-    @FXML
-    private void DeleteAllFromCartTable(ActionEvent event) {
-    }
 
     @FXML
-    private void GenerateBillOnclick(ActionEvent event) {
-    }
-
-    @FXML
-    private void CouponRadioButton(ActionEvent event) {
-    }
-
-    @FXML
-    private void MembershipRadioButton(ActionEvent event) {
-    }
-
-    @FXML
-    private void AddToCartTableOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void GoBackOnClick(ActionEvent event) throws IOException {
+    private void GoBackOnClick(ActionEvent event) {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
 root = (Parent) myLoader.load();
@@ -80,6 +49,11 @@ BuyerDashboardController x = myLoader.getController();
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show();
+    }
+
+    @FXML
+    private void ViewFeedbackTableOnClick(ActionEvent event) {
+        
     }
     
 }

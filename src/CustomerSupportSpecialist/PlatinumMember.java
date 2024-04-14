@@ -11,7 +11,7 @@ package CustomerSupportSpecialist;
 public class PlatinumMember extends Members {
     public PlatinumMember(String name, int memberId) {
         super(name, memberId);
-        setAnnualFee(100.0); // Set the annual fee for platinum members
+        setAnnualFee(1700.0); // Set the annual fee for platinum members
     }
 
     @Override

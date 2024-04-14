@@ -4,6 +4,7 @@
  */
 package Buyer;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -43,7 +44,7 @@ public class BuyerFeedbackController implements Initializable {
     }
 
     @FXML
-    private void GoBackOnClick(ActionEvent event) {
+    private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
 root = (Parent) myLoader.load();

@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package Buyer;
+package CustomerSupportSpecialist;
 
-import java.io.IOException;
+import Buyer.BuyerDashboardController;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -15,8 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -24,20 +23,14 @@ import javafx.stage.Stage;
  *
  * @author User
  */
-public class CartItemsController implements Initializable {
+public class UpdateMembershipFormController implements Initializable {
 
     @FXML
-    private Label ShowBuyerName;
+    private ComboBox<?> MembershipTypeComboBox;
     @FXML
-    private Label ShowBuyerID;
+    private ComboBox<?> ElementComboBox;
     @FXML
-    private Label ShowOrderProcess;
-    @FXML
-    private TableView<?> CartItemsTable;
-    @FXML
-    private ComboBox<?> ItemsComboBox;
-    @FXML
-    private ComboBox<?> QuantityComboBox;
+    private TextField LabelOnElementTextField;
 
     /**
      * Initializes the controller class.
@@ -48,27 +41,11 @@ public class CartItemsController implements Initializable {
     }    
 
     @FXML
-    private void DeleteAllFromCartTable(ActionEvent event) {
+    private void UpdateFormOnClick(ActionEvent event) {
     }
 
     @FXML
-    private void GenerateBillOnclick(ActionEvent event) {
-    }
-
-    @FXML
-    private void CouponRadioButton(ActionEvent event) {
-    }
-
-    @FXML
-    private void MembershipRadioButton(ActionEvent event) {
-    }
-
-    @FXML
-    private void AddToCartTableOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void GoBackOnClick(ActionEvent event) throws IOException {
+    private void GoBackOnClick(ActionEvent event) {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
 root = (Parent) myLoader.load();

@@ -8,8 +8,14 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -28,6 +34,8 @@ public class UpdateProfileController implements Initializable {
     private Label DateJoinedLabel;
     @FXML
     private Label SalaryLabel;
+    @FXML
+    private TextField NewAddressTextField;
 
     /**
      * Initializes the controller class.
@@ -40,23 +48,26 @@ public class UpdateProfileController implements Initializable {
         IDLabel.setText("2211");
     }    
 
-    @FXML
-    private void SaveEverythingOnClick(ActionEvent event) {
-        
-    }
 
     @FXML
     private void ChangeAddressOnClick(ActionEvent event) {
         
     }
 
-    @FXML
-    private void TakeLeaveOnClick(ActionEvent event) {
-        
-    }
 
     @FXML
     private void GoBackOnClick(ActionEvent event) {
+        Parent root = null;
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CustomerSpecialistDashboard.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+CustomerSpecialistDashboardController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();
     }
     
 }

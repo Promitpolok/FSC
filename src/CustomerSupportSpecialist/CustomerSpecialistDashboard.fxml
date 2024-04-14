@@ -24,14 +24,14 @@
    <left>
       <AnchorPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="22.0" layoutY="114.0" mnemonicParsing="false" text="Report List" />
-            <Button layoutX="22.0" layoutY="150.0" mnemonicParsing="false" text="Feedback List" />
-            <Button layoutX="18.0" layoutY="188.0" mnemonicParsing="false" text="Update Profile " />
-            <Label layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Name:" />
-            <Label layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="ID:" />
-            <Button layoutX="17.0" layoutY="267.0" mnemonicParsing="false" text="Update product catalogue" />
-            <Button layoutX="18.0" layoutY="228.0" mnemonicParsing="false" text="Update Membership form" />
-            <Button layoutX="18.0" layoutY="303.0" mnemonicParsing="false" text="Live Chat" />
+            <Button layoutX="22.0" layoutY="114.0" mnemonicParsing="false" onAction="#GoToReportsOnClick" text="Report List" />
+            <Button layoutX="22.0" layoutY="150.0" mnemonicParsing="false" onAction="#GoToFeedbacksOnClick" text="Feedback List" />
+            <Button layoutX="18.0" layoutY="188.0" mnemonicParsing="false" onAction="#GoToUpdateProfileOnClick" text="Update Profile " />
+            <Label fx:id="showCustomerspecialistName" layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Name:" />
+            <Label fx:id="showCustomerspecialistID" layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="ID:" />
+            <Button layoutX="17.0" layoutY="267.0" mnemonicParsing="false" onAction="#GoToUpdateProductCatalogueOnClick" text="Update product catalogue" />
+            <Button layoutX="18.0" layoutY="228.0" mnemonicParsing="false" onAction="#GoToUpdateMembershipOnClick" text="Update Membership form" />
+            <Button layoutX="18.0" layoutY="303.0" mnemonicParsing="false" onAction="#GoToLiveChatOnClick" text="Live Chat" />
             <Button layoutX="18.0" layoutY="336.0" mnemonicParsing="false" onAction="#ViewMembershipOnClick" text="View Memberships" />
          </children>
       </AnchorPane>

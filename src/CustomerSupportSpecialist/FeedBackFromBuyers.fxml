@@ -7,9 +7,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerSupportSpecialist.FeedBackFromBuyersController">
    <children>
-      <TableView layoutX="53.0" layoutY="72.0" prefHeight="200.0" prefWidth="249.0">
+      <TableView fx:id="FeedbackTableView" layoutX="160.0" layoutY="111.0" prefHeight="200.0" prefWidth="249.0">
         <columns>
           <TableColumn prefWidth="133.0" text="Buyer ID" />
           <TableColumn prefWidth="115.0" text="Date" />
@@ -19,7 +19,7 @@
          <font>
             <Font size="27.0" />
          </font></Text>
-      <Button layoutX="53.0" layoutY="334.0" mnemonicParsing="false" text="Send To CEO" />
-      <Button layoutX="159.0" layoutY="334.0" mnemonicParsing="false" text="Send to Digital Marketing Executive" />
+      <Button layoutX="27.0" layoutY="19.0" mnemonicParsing="false" onAction="#GoBackOnClick" text="Back" />
+      <Button layoutX="259.0" layoutY="73.0" mnemonicParsing="false" onAction="#ViewFeedbackTableOnClick" text="View" />
    </children>
 </AnchorPane>

@@ -7,17 +7,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: skyblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CustomerSupportSpecialist.UpdateProductCatalogueController">
    <children>
-      <ComboBox layoutX="40.0" layoutY="81.0" prefWidth="150.0" promptText="Select Product" />
-      <TextField layoutX="203.0" layoutY="144.0" />
+      <ComboBox fx:id="SelectProductComboBox" layoutX="40.0" layoutY="81.0" prefWidth="150.0" promptText="Select Product" />
+      <TextField fx:id="ProductUpdateInfoTextField" layoutX="203.0" layoutY="144.0" />
       <Text layoutX="43.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Updated Description " />
-      <Button layoutX="203.0" layoutY="188.0" mnemonicParsing="false" text="Save &amp; Update " />
+      <Button layoutX="203.0" layoutY="188.0" mnemonicParsing="false" onAction="#UpdateProductInfoOnClick" text="Save &amp; Update " />
       <Text layoutX="133.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Product Catalogue">
          <font>
             <Font size="27.0" />
          </font>
       </Text>
+      <Button layoutX="17.0" layoutY="32.0" mnemonicParsing="false" onAction="#GoBackOnClick" text="Back" />
    </children>
 </AnchorPane>

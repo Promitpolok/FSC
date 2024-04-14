@@ -4,6 +4,7 @@
  */
 package Buyer;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,6 +15,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -31,6 +33,8 @@ public class BuyerProfileController implements Initializable {
     private Label ShowBuyerMembershipType;
     @FXML
     private Label ShowBuyerAddress;
+    @FXML
+    private TextField NewAddressTextField;
 
     /**
      * Initializes the controller class.
@@ -43,11 +47,12 @@ public class BuyerProfileController implements Initializable {
 
     @FXML
     private void ChangeAddressOnClick(ActionEvent event) {
+        
     }
     
 
     @FXML
-    private void GoBackOnClick(ActionEvent event) {
+    private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
 root = (Parent) myLoader.load();

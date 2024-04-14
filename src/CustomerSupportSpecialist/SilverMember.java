@@ -8,6 +8,14 @@ package CustomerSupportSpecialist;
  *
  * @author User
  */
-public class SilverMember {
-    
+public class SilverMember extends Members {
+    public SilverMember(String name, int memberId) {
+        super(name, memberId);
+        setAnnualFee(1000.0); // Set the annual fee for silver members
+    }
+
+    @Override
+    public void membershipBenefits() {
+        System.out.println("Silver member benefits: Discounts on select products.");
+    }
 }
