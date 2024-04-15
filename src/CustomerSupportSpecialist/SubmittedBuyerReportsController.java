@@ -56,7 +56,7 @@ myStage.show();
 
     @FXML
     private void ViewReportsTable(ActionEvent event) {
-        ShowReportsLabel.setText();
+        ShowReportsLabel.setText("");
         
     }
     
