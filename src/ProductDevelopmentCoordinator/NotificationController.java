@@ -45,10 +45,10 @@ public class NotificationController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         
         notifications = new ArrayList<>();
-        notifications.add("Supply Chain Coordinator: OK.");
+        //notifications.add("Supply Chain Coordinator: OK.");
         notifications.add("Accountant: Have Great Day");
         notifications.add("Digital Marketing Executive: New Advertisement Launched!!");
-        notifications.add("CEO: Come to my office at Noon.");
+        notifications.add("CEO: Check the new products.");
         notifications.add("Warehouse Associate: Just checked in");
         notifications.add("Customer Support Specialist: Greetings of the day");
         
