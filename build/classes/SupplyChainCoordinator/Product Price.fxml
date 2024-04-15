@@ -35,11 +35,16 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TextArea fx:id="productInfoTextArea" editable="false" layoutX="14.0" layoutY="250.0" prefHeight="200.0" prefWidth="550.0" text="Product Info:">
+      <TextArea fx:id="productInfoTextArea" editable="false" layoutX="8.0" layoutY="250.0" prefHeight="222.0" prefWidth="714.0" text="Product Info:">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextArea>
       <TextField fx:id="enterPriceTextField" layoutX="216.0" layoutY="102.0" promptText="Enter Price" />
+      <Button layoutX="646.0" layoutY="206.0" mnemonicParsing="false" onAction="#clearButtonOnMouseClick" prefHeight="31.0" prefWidth="68.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

@@ -19,21 +19,26 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="226.0" layoutY="137.0" mnemonicParsing="false" onAction="#SendMessageButtonOnMouseClick" prefHeight="31.0" prefWidth="124.0" text="Send Message">
+      <Button layoutX="239.0" layoutY="76.0" mnemonicParsing="false" onAction="#SendMessageButtonOnMouseClick" prefHeight="31.0" prefWidth="124.0" text="Send Message">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <TextField fx:id="enterMessageTextField" layoutX="382.0" layoutY="76.0" promptText="Enter Your Message">
+      <TextField fx:id="enterMessageTextField" layoutX="14.0" layoutY="137.0" promptText="Enter Your Message">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </TextField>
-      <ComboBox fx:id="selectNameComboBox" layoutX="213.0" layoutY="76.0" prefWidth="150.0" promptText="Select Name" />
+      <ComboBox fx:id="selectNameComboBox" layoutX="436.0" layoutY="76.0" prefWidth="150.0" promptText="Select Name" />
       <TextArea fx:id="notificationTextArea" editable="false" layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="574.0" text="Notifications:">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </TextArea>
+      <Button layoutX="268.0" layoutY="137.0" mnemonicParsing="false" onAction="#clearButtonOnMouseClick" prefHeight="31.0" prefWidth="65.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

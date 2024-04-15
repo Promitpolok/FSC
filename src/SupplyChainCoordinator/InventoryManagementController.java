@@ -17,6 +17,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -30,6 +31,8 @@ public class InventoryManagementController implements Initializable {
     private ComboBox<String> selectProductComboBox;
     
     private ArrayList <CartItem> cartList;
+    @FXML
+    private TextArea productRecordsTextArea;
 
     /**
      * Initializes the controller class.
@@ -82,12 +85,38 @@ myStage.setScene(myScene);
 myStage.show(); 
     }
 
-    @FXML
-    private void StoreProductRecordsButtonOnMouseClick(ActionEvent event) {
-    }
 
     @FXML
     private void ViewProductDetailsButtonOnMouseClick(ActionEvent event) {
+        
+       if (selectProductComboBox.getSelectionModel().getSelectedItem() != null) {
+           String selectedProduct = selectProductComboBox.getSelectionModel().getSelectedItem();
+           productRecordsTextArea.appendText("This product record is saved: " + selectedProduct + "\n");
+           
+       } else {
+        productRecordsTextArea.appendText("Please select a product.\n");
+       } 
+    }
+
+    @FXML
+    private void saveProductRecordsButtonOnMouseClick(ActionEvent event) {
+        
+        
+        if (selectProductComboBox.getSelectionModel().getSelectedItem() != null) {
+        
+            productRecordsTextArea.appendText("The product record is saved\n");
+            
+        } else {
+        
+            productRecordsTextArea.appendText("Please select a product\n");
+        }
+        
+  
+    }
+
+    @FXML
+    private void clearButtonOnMouseClick(ActionEvent event) {
+        productRecordsTextArea.clear();
     }
     
 }

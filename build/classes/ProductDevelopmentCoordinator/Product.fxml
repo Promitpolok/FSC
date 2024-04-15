@@ -22,10 +22,6 @@
          <font>
             <Font name="System Bold" size="15.0" />
          </font></Button>
-      <Button layoutX="276.0" layoutY="163.0" mnemonicParsing="false" onAction="#ViewProductButtonOnMouseClick" prefHeight="60.0" prefWidth="158.0" text="View Product">
-         <font>
-            <Font name="System Bold" size="15.0" />
-         </font></Button>
       <TextArea fx:id="productInfoTextArea" editable="false" layoutX="10.0" layoutY="293.0" prefHeight="200.0" prefWidth="749.0" text="Product Info:">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -37,5 +33,10 @@
          </font>
       </Button>
       <ComboBox fx:id="selectNewProductComboBox" layoutX="37.0" layoutY="136.0" prefHeight="31.0" prefWidth="189.0" promptText="Select New Product" />
+      <Button layoutX="302.0" layoutY="179.0" mnemonicParsing="false" onAction="#clearButtonOnMouseClick" prefHeight="40.0" prefWidth="101.0" text="Clear">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
