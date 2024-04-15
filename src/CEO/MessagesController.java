@@ -45,5 +45,37 @@ Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show();
     }
+
+    @FXML
+    private void composeButtonOnMouseClick(ActionEvent event) throws IOException {
+        Parent root = null;
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Compose.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+ComposeController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();
+
+    }
+
+    @FXML
+    private void inboxButtonOnMouseClick(ActionEvent event) throws IOException {
+        Parent root = null;
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Inbox.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+InboxController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();
+
+    }
     
 }

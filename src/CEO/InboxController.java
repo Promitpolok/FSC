@@ -14,20 +14,14 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
-
 
 /**
  * FXML Controller class
  *
  * @author shafayatfahim
  */
-public class ComposeController implements Initializable {
-
-    @FXML
-    private TextArea newMessageTextArea;
-    
+public class InboxController implements Initializable {
 
     /**
      * Initializes the controller class.
@@ -38,35 +32,7 @@ public class ComposeController implements Initializable {
     }    
 
     @FXML
-    private void accountButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void customerSSButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void digitalMEButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void productDCButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void supplyCCButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void chiefWEButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void buyerButtonOnClick(ActionEvent event) {
-    }
-
-    @FXML
-    private void backButtonOnClick(ActionEvent event) throws IOException {
+    private void backButtonOnMouseClick(ActionEvent event) throws IOException {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Messages.fxml"));
 root = (Parent) myLoader.load();
@@ -79,11 +45,6 @@ Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show();
 
-        
-    }
-
-    @FXML
-    private void sendButtonOnClick(ActionEvent event) {
     }
     
 }

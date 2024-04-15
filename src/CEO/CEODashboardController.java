@@ -45,5 +45,37 @@ Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show();
     }
+
+    @FXML
+    private void salaryApproveButtonOnMouseClick(ActionEvent event) throws IOException {
+        Parent root = null;
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("SalaryApprove.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+SalaryApproveController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();
+
+    }
+
+    @FXML
+    private void taskButtonOnMouseClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void goalsButtonOnMouseClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void financialReportsButtonOnMouseClick(ActionEvent event) {
+    }
+
+    @FXML
+    private void salesFigureButtonOnMouseClick(ActionEvent event) {
+    }
     
 }

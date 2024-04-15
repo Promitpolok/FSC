@@ -17,7 +17,7 @@
             </Label>
          </children>
       </AnchorPane>
-      <Button layoutX="-7.0" layoutY="65.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="206.0" text="Compose" />
-      <Button layoutX="-7.0" layoutY="115.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="206.0" text="Inbox" />
+      <Button layoutX="-7.0" layoutY="65.0" mnemonicParsing="false" onAction="#composeButtonOnMouseClick" prefHeight="27.0" prefWidth="206.0" text="Compose" />
+      <Button layoutX="-7.0" layoutY="115.0" mnemonicParsing="false" onAction="#inboxButtonOnMouseClick" prefHeight="27.0" prefWidth="206.0" text="Inbox" />
    </children>
 </AnchorPane>
