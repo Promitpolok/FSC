@@ -4,6 +4,7 @@
  */
 package CustomerSupportSpecialist;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -46,17 +47,21 @@ public class UpdateProfileController implements Initializable {
         // TODO
         NameLabel.setText("Sayed");
         IDLabel.setText("2211");
-    }    
+        DateJoinedLabel.setText("9 dec 22");
+        SalaryLabel.setText("25000");
+    }   
 
 
     @FXML
     private void ChangeAddressOnClick(ActionEvent event) {
+       
+        AddressLabel.setText( NewAddressTextField.getText());
         
     }
 
 
     @FXML
-    private void GoBackOnClick(ActionEvent event) {
+    private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CustomerSpecialistDashboard.fxml"));
 root = (Parent) myLoader.load();

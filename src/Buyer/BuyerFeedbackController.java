@@ -30,16 +30,21 @@ public class BuyerFeedbackController implements Initializable {
     @FXML
     private TextField TypeID;
 
+    private String buyerFeedback;
+
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        TypeID.getText();
+        
     }    
 
     @FXML
     private void BuyerSubmitFeedback(ActionEvent event) {
+        this.buyerFeedback= TypeFeedbackMessage.getText();
         
     }
 
@@ -57,5 +62,6 @@ Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show();
     }
+
     
 }

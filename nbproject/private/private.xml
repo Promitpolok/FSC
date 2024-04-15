@@ -3,11 +3,27 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/ViewMemberships.fxml</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/BuyerDashboardController.java</file>
             <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/ViewMembershipsController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/BuyerLiveChatController.java</file>
             <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/UpdateProfileController.java</file>
-            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/BillController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/BuyerErrorController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/SubmittedBuyerReportsController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/CustomerSpecialistDashboardController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/FeedBackFromBuyersController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/BuyerProfileController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/ProductCatalogueController.java</file>
             <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/MembershipFormController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/UpdateMembershipFormController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/UpdateProductCatalogueController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/ViewMemberships.fxml</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/BuyerFeedbackController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/CustomerSpecialistLiveChatController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/BillController.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/Members.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/PlatinumMember.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/CustomerSupportSpecialist/SilverMember.java</file>
+            <file>file:/C:/Users/User/Documents/GitHub/FSC/src/Buyer/CartItemsController.java</file>
         </group>
     </open-files>
 </project-private>

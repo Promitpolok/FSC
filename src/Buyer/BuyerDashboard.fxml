@@ -24,13 +24,13 @@
       <AnchorPane prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <Button layoutX="52.0" layoutY="110.0" mnemonicParsing="false" onAction="#MakeCartOnClick" text="Make Cart" />
-            <Button layoutX="54.0" layoutY="153.0" mnemonicParsing="false" onAction="#MakeFeedbackOnClick" text="Feedback" />
-            <Button layoutX="53.0" layoutY="197.0" mnemonicParsing="false" onAction="#UpdateProfileOnClick" text="Update Profile " />
+            <Button layoutX="57.0" layoutY="143.0" mnemonicParsing="false" onAction="#MakeFeedbackOnClick" text="Feedback" />
+            <Button layoutX="52.0" layoutY="175.0" mnemonicParsing="false" onAction="#UpdateProfileOnClick" text="Update Profile " />
             <Label fx:id="ShowName" layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Name:" />
             <Label fx:id="ShowMembershipType" layoutX="14.0" layoutY="52.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Membership type:" />
             <Label fx:id="ShowID" layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="ID:" />
-            <Button layoutX="54.0" layoutY="237.0" mnemonicParsing="false" onAction="#CreateMembershipOnclick" text="CreateMembership " />
-            <Button layoutX="52.0" layoutY="283.0" mnemonicParsing="false" onAction="#GoToProductPageOnClick" text="Products" />
+            <Button layoutX="52.0" layoutY="218.0" mnemonicParsing="false" onAction="#CreateMembershipOnclick" text="CreateMembership " />
+            <Button layoutX="56.0" layoutY="258.0" mnemonicParsing="false" onAction="#GoToProductPageOnClick" text="Products" />
             <Button layoutX="52.0" layoutY="321.0" mnemonicParsing="false" onAction="#SignOutOnClick" text="SignOut" />
          </children>
       </AnchorPane>
@@ -40,6 +40,7 @@
          <children>
             <Label fx:id="ShowCoupon" layoutX="17.0" layoutY="55.0" prefHeight="52.0" prefWidth="311.0" style="-fx-background-color: white;" text="1) Coupon 10% OFF for 100TK bill !!!" />
             <Label fx:id="ShowDiscount" layoutX="17.0" layoutY="118.0" prefHeight="70.0" prefWidth="313.0" style="-fx-background-color: white;" text="2) Eid Discount on everything 20% !!!! ( ONLY for Platinum membership)" wrapText="true" />
+            <Label fx:id="OrderErrorLabel" layoutX="23.0" layoutY="221.0" prefHeight="46.0" prefWidth="230.0" style="-fx-background-color: white;" text="Order errors:" textFill="#cc1212" />
          </children>
       </AnchorPane>
    </center>

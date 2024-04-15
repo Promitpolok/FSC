@@ -63,7 +63,8 @@ myStage.show();
     private void ShowMembershipOnClick(ActionEvent event) {
         Iterable<Members> MembershipList = null;
         for(Members s: MembershipList){
-            MembershipTableView.getItems().add();
+            MembershipTableView.getItems();
     }
     
+}
 }

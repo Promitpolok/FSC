@@ -19,6 +19,10 @@ public class Members {
         this.memberId = memberId;
     }
 
+    public Members(int parseInt, String text, String value, String text0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
     public String getName() {
         return name;
     }

@@ -42,12 +42,13 @@ public class BuyerProfileController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
     }    
 
 
     @FXML
     private void ChangeAddressOnClick(ActionEvent event) {
-        
+        ShowBuyerAddress.setText(NewAddressTextField.getText());
     }
     
 

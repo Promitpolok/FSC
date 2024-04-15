@@ -2,9 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package CustomerSupportSpecialist;
+package Buyer;
 
-import Buyer.BuyerDashboardController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,8 +14,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextField;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -24,14 +22,10 @@ import javafx.stage.Stage;
  *
  * @author User
  */
-public class UpdateMembershipFormController implements Initializable {
+public class BuyerReportController implements Initializable {
 
     @FXML
-    private ComboBox<?> MembershipTypeComboBox;
-    @FXML
-    private ComboBox<?> ElementComboBox;
-    @FXML
-    private TextField LabelOnElementTextField;
+    private TextArea ReportMesageTextField;
 
     /**
      * Initializes the controller class.
@@ -39,26 +33,27 @@ public class UpdateMembershipFormController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+         String report;
     }    
-
-    @FXML
-    private void UpdateFormOnClick(ActionEvent event) {
-        
-    }
 
     @FXML
     private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CustomerSpecialistDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-CustomerSpecialistDashboardController x = myLoader.getController();
+BuyerDashboardController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 myStage.setScene(myScene);
 myStage.show();
+    }
+
+    @FXML
+    private void SubmitReport(ActionEvent event) {
+        String report = ReportMesageTextField.getText();
     }
     
 }

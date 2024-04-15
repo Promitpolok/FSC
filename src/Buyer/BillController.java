@@ -26,8 +26,6 @@ import javafx.stage.Stage;
 public class BillController implements Initializable {
 
     @FXML
-    private TableView<?> ShowCartItemsTable;
-    @FXML
     private Label ShowTotalBill;
 
     /**
@@ -40,6 +38,7 @@ public class BillController implements Initializable {
 
     @FXML
     private void ConfirmBillOnClick(ActionEvent event) {
+        
     }
 
     @FXML

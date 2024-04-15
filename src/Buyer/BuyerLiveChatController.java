@@ -32,6 +32,7 @@ public class BuyerLiveChatController implements Initializable {
     private TextArea EnterLiveChatMessage;
     @FXML
     private Label ShowCustomerSpecialistMessage;
+    private String buyerLiveChatMessage;
 
     /**
      * Initializes the controller class.
@@ -39,10 +40,12 @@ public class BuyerLiveChatController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
     }    
 
     @FXML
     private void ClickToSendToCustomerSpecialist(ActionEvent event) {
+        this.buyerLiveChatMessage= EnterLiveChatMessage.getText();
     }
 
     @FXML

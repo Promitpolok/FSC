@@ -16,6 +16,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 /**
@@ -29,6 +30,8 @@ public class BuyerErrorController implements Initializable {
     private Label ShowErrorMessage;
     @FXML
     private Label ShowBuyerID;
+    @FXML
+    private TextField SendBuyerNotificationMessage;
 
     /**
      * Initializes the controller class.
@@ -36,6 +39,7 @@ public class BuyerErrorController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
     }    
 
     @FXML
@@ -44,16 +48,17 @@ public class BuyerErrorController implements Initializable {
 
     @FXML
     private void CancelOrderAndNotifyBuyerDashboard(ActionEvent event) {
+        OrderErrorLabel.setText(SendBuyerNotificationMessage.getText());
     }
 
     @FXML
     private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CustomerSpecialistDashboard.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+CustomerSpecialistDashboardController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();

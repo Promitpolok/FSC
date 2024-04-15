@@ -26,18 +26,17 @@ import javafx.stage.Stage;
  */
 public class CartItemsController implements Initializable {
 
+    //@FXML
+    //private TableView<?> CartItemsTable;
     @FXML
-    private Label ShowBuyerName;
+    private ComboBox<String> ItemsComboBox;
     @FXML
-    private Label ShowBuyerID;
+    private ComboBox<String> QuantityComboBox;
+    
     @FXML
-    private Label ShowOrderProcess;
-    @FXML
-    private TableView<?> CartItemsTable;
-    @FXML
-    private ComboBox<?> ItemsComboBox;
-    @FXML
-    private ComboBox<?> QuantityComboBox;
+    private TableView<String> cartTableView;
+
+    private Cart cart;
 
     /**
      * Initializes the controller class.
@@ -45,26 +44,34 @@ public class CartItemsController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        cart = new Cart();
     }    
 
     @FXML
     private void DeleteAllFromCartTable(ActionEvent event) {
+        cart.clearCart();
     }
 
     @FXML
-    private void GenerateBillOnclick(ActionEvent event) {
+    private void GenerateBillOnclick(ActionEvent event) throws IOException {
+        Parent root = null;
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Bill.fxml"));
+root = (Parent) myLoader.load();
+Scene myScene = new Scene(root);
+
+BillController x = myLoader.getController();
+//x.setValue(value);
+
+Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+myStage.setScene(myScene);
+myStage.show();
     }
 
-    @FXML
-    private void CouponRadioButton(ActionEvent event) {
-    }
-
-    @FXML
-    private void MembershipRadioButton(ActionEvent event) {
-    }
 
     @FXML
     private void AddToCartTableOnClick(ActionEvent event) {
+        cartTableView.setItems(cart.getItems());
+        
     }
 
     @FXML

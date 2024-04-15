@@ -4,6 +4,7 @@
  */
 package Buyer;
 
+import Login.Login_InterfaceController;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,6 +36,8 @@ public class BuyerDashboardController implements Initializable {
     private Label ShowCoupon;
     @FXML
     private Label ShowDiscount;
+    @FXML
+    private Label OrderErrorLabel;
 
     /**
      * Initializes the controller class.
@@ -49,9 +52,9 @@ public class BuyerDashboardController implements Initializable {
     @Override
     public void initialize(String ShowName, int ShowID, String ShowMembershipType) {
         // Set buyer details
-        ShowName.setText("Name: " + ShowName);
-        ShowID.setText("ID: " + ShowID);
-        ShowMembershipType.setText("Membership Type: " + ShowMembershipType);
+        ShowName.setText("Name: " + "ShowName");
+        ShowID.setText("ID: " + "ShowID");
+        ShowMembershipType.setText("Membership Type: " + "ShowMembershipType");
 
     
 }
@@ -59,11 +62,11 @@ public class BuyerDashboardController implements Initializable {
     @FXML
     private void MakeCartOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CartItems.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+CartItemsController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -74,11 +77,11 @@ myStage.show();
     @FXML
     private void MakeFeedbackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerFeedback.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+BuyerFeedbackController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -89,11 +92,11 @@ myStage.show();
     @FXML
     private void UpdateProfileOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerProfile.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+BuyerProfileController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -104,11 +107,11 @@ myStage.show();
     @FXML
     private void CreateMembershipOnclick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("MembershipForm.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+MembershipFormController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -119,11 +122,11 @@ myStage.show();
     @FXML
     private void GoToProductPageOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("ProductCatalogue.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+ProductCatalogueController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -134,11 +137,11 @@ myStage.show();
     @FXML
     private void SignOutOnClick(ActionEvent event) {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("Login_Interface.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+Login_InterfaceController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();

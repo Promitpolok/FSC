@@ -28,7 +28,7 @@
             <Button layoutX="22.0" layoutY="150.0" mnemonicParsing="false" onAction="#GoToFeedbacksOnClick" text="Feedback List" />
             <Button layoutX="18.0" layoutY="188.0" mnemonicParsing="false" onAction="#GoToUpdateProfileOnClick" text="Update Profile " />
             <Label fx:id="showCustomerspecialistName" layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="Name:" />
-            <Label fx:id="showCustomerspecialistID" layoutX="14.0" layoutY="83.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="ID:" />
+            <Label fx:id="showCustomerspecialistID" layoutX="14.0" layoutY="50.0" prefHeight="17.0" prefWidth="152.0" style="-fx-background-color: white;" text="ID:" />
             <Button layoutX="17.0" layoutY="267.0" mnemonicParsing="false" onAction="#GoToUpdateProductCatalogueOnClick" text="Update product catalogue" />
             <Button layoutX="18.0" layoutY="228.0" mnemonicParsing="false" onAction="#GoToUpdateMembershipOnClick" text="Update Membership form" />
             <Button layoutX="18.0" layoutY="303.0" mnemonicParsing="false" onAction="#GoToLiveChatOnClick" text="Live Chat" />
@@ -40,6 +40,7 @@
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
             <TextArea layoutX="14.0" layoutY="14.0" prefHeight="105.0" prefWidth="368.0" text="Today's TO DO LIST:" />
+            <Button layoutX="320.0" layoutY="320.0" mnemonicParsing="false" onAction="#SignOutOnClick" text="SignOut" />
          </children>
       </AnchorPane>
    </center>

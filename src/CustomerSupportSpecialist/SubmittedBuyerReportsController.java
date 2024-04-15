@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
@@ -26,7 +27,7 @@ import javafx.stage.Stage;
 public class SubmittedBuyerReportsController implements Initializable {
 
     @FXML
-    private TableView<string> showReportsTable;
+    private Label ShowReportsLabel;
 
     /**
      * Initializes the controller class.
@@ -55,6 +56,7 @@ myStage.show();
 
     @FXML
     private void ViewReportsTable(ActionEvent event) {
+        ShowReportsLabel.setText();
         
     }
     

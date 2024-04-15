@@ -5,6 +5,7 @@
 package CustomerSupportSpecialist;
 
 import Buyer.BuyerDashboardController;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -40,10 +41,11 @@ public class UpdateProductCatalogueController implements Initializable {
 
     @FXML
     private void UpdateProductInfoOnClick(ActionEvent event) {
+        ProductUpdateInfoTextField.getText();
     }
 
     @FXML
-    private void GoBackOnClick(ActionEvent event) {
+    private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
 FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CustomerSpecialistDashboard.fxml"));
 root = (Parent) myLoader.load();

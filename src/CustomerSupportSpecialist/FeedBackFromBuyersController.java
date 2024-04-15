@@ -5,6 +5,7 @@
 package CustomerSupportSpecialist;
 
 import Buyer.BuyerDashboardController;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -14,7 +15,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
 /**
@@ -25,7 +28,7 @@ import javafx.stage.Stage;
 public class FeedBackFromBuyersController implements Initializable {
 
     @FXML
-    private TableView<?> FeedbackTableView;
+    private Label ShowBuyerFeedbacks;
 
     /**
      * Initializes the controller class.
@@ -33,17 +36,18 @@ public class FeedBackFromBuyersController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        
     }    
 
 
     @FXML
-    private void GoBackOnClick(ActionEvent event) {
+    private void GoBackOnClick(ActionEvent event) throws IOException {
         Parent root = null;
-FXMLLoader myLoader = new FXMLLoader(getClass().getResource("BuyerDashboard.fxml"));
+FXMLLoader myLoader = new FXMLLoader(getClass().getResource("CustomerSpecialistDashboard.fxml"));
 root = (Parent) myLoader.load();
 Scene myScene = new Scene(root);
 
-BuyerDashboardController x = myLoader.getController();
+CustomerSpecialistDashboardController x = myLoader.getController();
 //x.setValue(value);
 
 Stage myStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -53,6 +57,7 @@ myStage.show();
 
     @FXML
     private void ViewFeedbackTableOnClick(ActionEvent event) {
+        ShowBuyerFeedbacks.setText(value);
         
     }
     
