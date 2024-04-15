@@ -4,11 +4,15 @@
  */
 package Digital_Marketing_Excutive;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+//import java.io.BufferedReader;
+import java.io.FileInputStream;
+//import java.io.FileReader;
 import java.io.IOException;
+import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -52,16 +56,38 @@ myStage.setScene(myScene);
 myStage.show();  
     }
 
+
+
     @FXML
-     private void okButtonOnClick(ActionEvent event) {
-     }
+    private void okButtonOnClick(ActionEvent event) { 
+
+//public static ObservableList<AdsHelper> readCartList() {
+//    ObservableList<AdsHelper> cartList = FXCollections.observableArrayList();
+//    AdsHelper i;
+//    ObjectInputStream ois = null;
+//    try {
+//        ois = new ObjectInputStream(new FileInputStream("Patient.bin"));
+//        while (true) {
+//            i = (AdsHelper) ois.readObject();
+//            System.out.println("The item you read: " + i.toString());
+//            cartList.add(i);
+//        }
+//    } catch (IOException | ClassNotFoundException e) {
+//        System.out.println("File reading done");
+//    }
+//    System.out.println(cartList);
+//    return cartList;
+//}
+    }
 
     @FXML
     private void showAdsButtonOnClick(ActionEvent event) {
-        // Show the ShowAdsTextArea
-        ShowAdsTextArea.setVisible(true);
+//        for (AdsHelper a: cartList){
+//            ShowAdsTextArea.appendText(a.toString()+"\n");
+//        }
     }
-}
+    }
+
     
 
 
